@@ -754,3 +754,15 @@ section:first-of-type .section-header {
 .hero-split-content {
     overflow: visible !important;
 }
+
+/* ============================================================
+   20. FABRIC SECTION — SPACING
+   ============================================================ */
+
+/* Add gap below World-Class Fabrics section header */
+.fabric-header {
+    margin-bottom: 6rem !important;
+}
+.fabric-header .section-title {
+    margin-bottom: 1.5rem !important;
+}
