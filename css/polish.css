@@ -321,7 +321,6 @@ p {
 
 /* Close gap below hero on pages where main has extra padding */
 .hero + section,
-.gal-hero + .gal-tabs,
 .svc-hero + .svc-detail,
 .about-hero + .about-story,
 .blog-hero + .blog-categories {
