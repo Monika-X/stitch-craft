@@ -44,6 +44,7 @@ $newFooter = @"
             <div class="footer-bottom">
                 <p>&copy; 2026 StitchCraft Atelier. All rights reserved.</p>
                 <div class="footer-bottom-links">
+                    <a href="maintenance.html">Sitemap</a>
                     <a href="privacy-policy.html">Privacy</a>
                     <a href="terms-and-conditions.html">Terms</a>
                 </div>
