@@ -2085,10 +2085,6 @@
     padding: 0 5%;
 }
 
-.gal-tabs + .gal-section {
-    padding-top: 0;
-}
-
 .gal-tab {
     padding: 0.65rem 1.8rem;
     font-size: 0.8rem;
@@ -2117,7 +2113,7 @@
 
 /* ---- SECTION HEADER ---- */
 .gal-section {
-    padding: 10rem 0;
+    padding: 2rem 0 8rem 0;
 }
 
 .gal-section-header {
