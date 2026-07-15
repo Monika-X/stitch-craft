@@ -368,23 +368,25 @@
 
 .newsletter-form {
     display: flex;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    padding-bottom: 0.8rem;
-    transition: border-color 0.4s ease;
-}
-
-.newsletter-form:focus-within {
-    border-color: var(--color-accent);
+    gap: 10px;
+    position: relative;
 }
 
 .newsletter-form input {
-    background: transparent;
-    border: none;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     color: #fff;
     flex: 1;
     font-size: 0.95rem;
+    padding: 0.8rem 1.2rem;
     outline: none;
     font-weight: 300;
+    transition: all 0.4s ease;
+}
+
+.newsletter-form input:focus {
+    border-color: var(--color-accent);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .newsletter-form input::placeholder {
@@ -392,18 +394,45 @@
     letter-spacing: 1px;
 }
 
-.newsletter-form button {
-    background: transparent;
+.newsletter-form button.btn-subscribe {
+    background: var(--color-accent);
+    color: #000;
     border: none;
-    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0 1.5rem;
     cursor: pointer;
     transition: all 0.4s ease;
-    padding-left: 1rem;
+    text-transform: uppercase;
 }
 
-.newsletter-form button:hover {
+.newsletter-form button.btn-subscribe:hover {
+    background: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.form-feedback {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+    display: none;
+    letter-spacing: 1px;
+}
+.form-feedback.success {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
     color: var(--color-accent);
-    transform: translateX(5px);
+}
+.form-feedback.error {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    color: #ff5555;
 }
 
 .footer-bottom {

@@ -29,6 +29,63 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Global Form AJAX Handler
+document.addEventListener('submit', (e) => {
+  const form = e.target;
+  
+  // Exclude forms that specifically need traditional submission (like login/signup)
+  if (form.classList.contains('auth-form') || form.closest('.auth-container') || form.hasAttribute('data-no-ajax')) {
+    return; 
+  }
+
+  // If another script (like form-validation.js) already prevented default, let it handle its own logic
+  if (e.defaultPrevented) return;
+
+  e.preventDefault();
+
+  // Find or create feedback container
+  let feedback = form.nextElementSibling;
+  if (!feedback || !feedback.classList.contains('form-feedback')) {
+     feedback = form.querySelector('.form-feedback');
+     if (!feedback) {
+         feedback = document.createElement('div');
+         feedback.className = 'form-feedback';
+         form.parentNode.insertBefore(feedback, form.nextSibling);
+     }
+  }
+
+  // Simulate network request loading state
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
+  
+  if (submitBtn) {
+      submitBtn.innerHTML = '<span style="opacity: 0.5; letter-spacing: 2px;">SENDING...</span>';
+      submitBtn.disabled = true;
+  }
+
+  setTimeout(() => {
+      // Restore button
+      if (submitBtn) {
+          submitBtn.innerHTML = originalBtnText;
+          submitBtn.disabled = false;
+      }
+      
+      // Clear input fields
+      const inputs = form.querySelectorAll('input:not([type="submit"]):not([type="button"]), textarea');
+      inputs.forEach(input => input.value = '');
+
+      // Show success feedback
+      feedback.textContent = 'Thank you. Your request has been successfully processed.';
+      feedback.classList.remove('error');
+      feedback.classList.add('success');
+      
+      // Auto-hide feedback after a delay
+      setTimeout(() => {
+          feedback.classList.remove('success');
+      }, 5000);
+      
+  }, 1000);
+});
 
 // Scroll Reveal Animation
 document.addEventListener('DOMContentLoaded', () => {
