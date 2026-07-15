@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.unobserve(entry.target);
       }
     });
-  }, { rootMargin: '0px 0px -100px 0px' });
+  }, { rootMargin: '0px 0px 0px 0px', threshold: 0.05 });
   
   revealElements.forEach(el => revealObserver.observe(el));
 });
