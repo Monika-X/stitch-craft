@@ -1,0 +1,733 @@
+/* ==========================================================================
+   polish.css — Global Production Polish
+   StitchCraft — Final Visual Audit Fixes
+   Loaded LAST in every page — only corrective overrides, no redesigns.
+   ========================================================================== */
+
+/* ============================================================
+   1. SPACING SYSTEM — CONSISTENT VERTICAL RHYTHM
+   ============================================================ */
+
+/* Normalize section top padding to avoid accidental double-padding
+   when .container has its own padding AND a section has padding-top  */
+section.container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+/* Ensure consistent section breathing room on interior pages */
+.about-story,
+.about-tailors,
+.about-workshop,
+.about-achievements {
+    padding: 10rem 0;
+}
+
+.svc-fabric,
+.svc-pricing {
+    padding: 10rem 0;
+}
+
+.gal-section {
+    padding: 8rem 0;
+}
+
+/* ============================================================
+   2. CONTAINER — CONSISTENT HORIZONTAL PADDING
+   ============================================================ */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ============================================================
+   3. BUTTON SYSTEM — FULLY CONSISTENT ACROSS ALL PAGES
+   ============================================================ */
+
+/* Base */
+.btn,
+.btn-luxury,
+.btn-pricing-outline,
+.btn-pricing-fill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.8rem;
+    border-radius: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    border: 1px solid transparent;
+}
+
+/* Primary CTA */
+.btn-primary {
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-primary);
+    border-color: var(--color-text-primary);
+}
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-text-primary);
+}
+
+/* Outline / Secondary */
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-text-primary);
+    border-color: var(--color-border);
+}
+.btn-outline:hover {
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-primary);
+    border-color: var(--color-text-primary);
+}
+
+/* Luxury ghost (gold) */
+.btn-luxury {
+    padding: 1rem 2.5rem;
+    background: transparent;
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+}
+.btn-luxury:hover {
+    background: var(--color-accent);
+    color: #000;
+}
+
+/* Pricing outline */
+.btn-pricing-outline {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+}
+.btn-pricing-outline:hover {
+    background: var(--color-accent);
+    color: #000;
+}
+
+/* Pricing fill */
+.btn-pricing-fill {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    background: var(--color-accent);
+    color: #000;
+    border: 1px solid var(--color-accent);
+}
+.btn-pricing-fill:hover {
+    background: transparent;
+    color: var(--color-accent);
+}
+
+/* Remove duplicate inline hero button overrides */
+.hero-btns .btn {
+    min-width: 160px;
+}
+
+/* ============================================================
+   4. TYPOGRAPHY — GLOBAL CONSISTENCY
+   ============================================================ */
+
+/* Ensure all section subtitles are identical */
+.section-subtitle {
+    font-family: var(--font-body);
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+/* All section titles uniform baseline kerning */
+.section-title {
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+}
+
+/* Consistent paragraph opacity site-wide */
+p {
+    color: var(--color-text-primary);
+}
+
+/* Remove any inconsistent margin-bottom:0 on last paragraphs in cards */
+.feature-card p:last-child,
+.service-card p:last-child,
+.pick-content p:last-child,
+.blog-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   5. IMAGE CONSISTENCY — UNIFORM OBJECT-FIT
+   ============================================================ */
+
+/* All card-level images must have consistent height and object-fit */
+.blog-card-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 2rem;
+    filter: grayscale(50%);
+    transition: filter 0.6s ease;
+}
+
+.blog-card:hover .blog-card-img {
+    filter: grayscale(0%);
+}
+
+.pick-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Swatch images — consistent square */
+.swatch-img {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.swatch-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Gallery items — prevent broken layouts */
+.gal-item img,
+.gal-insta-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ============================================================
+   6. CARD STYLES — CONSISTENT TREATMENT
+   ============================================================ */
+
+/* Blog pick cards */
+.pick-card {
+    background-color: var(--color-bg-primary);
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    gap: 3rem;
+    transition: background-color 0.3s ease;
+}
+.pick-card:hover {
+    background-color: var(--color-bg-secondary);
+}
+
+/* Blog grid cards */
+.blog-card {
+    background-color: var(--color-bg-primary);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+.blog-card > * {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.blog-card-img {
+    padding: 0;
+    margin: 0 0 2rem;
+}
+.blog-card h3 {
+    padding-top: 0;
+    margin-bottom: 1rem;
+}
+.blog-card p {
+    padding-bottom: 2.5rem;
+}
+
+/* Feature cards — consistent border */
+.feature-card {
+    padding: 3.5rem;
+    border: 1px solid var(--color-border);
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+/* Service alt cards — consistent padding */
+.svc-alt-card {
+    padding: 4rem 3rem;
+}
+
+/* Fabric swatches */
+.fabric-swatch {
+    border-radius: 0;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.fabric-swatch:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+/* ============================================================
+   7. ALIGNMENT FIXES
+   ============================================================ */
+
+/* Centered section headers without misaligned text */
+.section-header.center .section-title {
+    text-align: center;
+}
+.section-header.center .section-subtitle {
+    text-align: center;
+}
+
+/* Fix nav-box alignment in article nav */
+.nav-box {
+    align-items: flex-start;
+}
+.nav-next {
+    align-items: flex-end;
+}
+
+/* Ensure hero buttons are left-aligned on Home 1 */
+.hero-text-block .hero-btns {
+    justify-content: flex-start;
+}
+
+/* Align meta info baseline */
+.article-meta-info {
+    align-items: baseline;
+}
+
+/* ============================================================
+   8. WHITE-SPACE & UNWANTED GAPS
+   ============================================================ */
+
+/* Close gap below hero on pages where main has extra padding */
+.hero + section,
+.gal-hero + .gal-tabs,
+.svc-hero + .svc-detail,
+.about-hero + .about-story,
+.blog-hero + .blog-categories {
+    margin-top: 0;
+}
+
+/* Fix stray top margin from section-header on first section */
+section:first-of-type .section-header {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* Remove orphaned margin on footer top */
+.footer {
+    margin-top: 0;
+}
+
+/* Close gap between article content and newsletter */
+.editorial-body + .blog-newsletter {
+    margin-top: 0;
+}
+
+/* ============================================================
+   9. DARK MODE — GLOBAL CONSISTENCY
+   ============================================================ */
+
+[data-theme="dark"] .feature-card {
+    border-color: rgba(255,255,255,0.06);
+    background-color: #1a1a1a;
+}
+[data-theme="dark"] .feature-card:hover {
+    background-color: #222222;
+    border-color: var(--color-accent);
+}
+[data-theme="dark"] .fabric-swatch {
+    border-color: rgba(255,255,255,0.06);
+}
+[data-theme="dark"] .pick-card:hover {
+    background-color: rgba(255,255,255,0.03);
+}
+[data-theme="dark"] .blog-card {
+    background-color: var(--color-bg-primary);
+}
+[data-theme="dark"] .blog-card:hover {
+    background-color: var(--color-bg-secondary);
+}
+[data-theme="dark"] .btn-primary {
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-primary);
+    border-color: var(--color-text-primary);
+}
+[data-theme="dark"] .btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-text-primary);
+}
+[data-theme="dark"] .btn-outline {
+    border-color: rgba(255,255,255,0.2);
+}
+[data-theme="dark"] .btn-outline:hover {
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-primary);
+    border-color: var(--color-text-primary);
+}
+
+/* ============================================================
+   10. RTL — ALIGNMENT CORRECTIONS
+   ============================================================ */
+
+[dir="rtl"] .hero-text-block .hero-btns {
+    justify-content: flex-start;
+}
+[dir="rtl"] .nav-next {
+    align-items: flex-start;
+    text-align: left;
+}
+[dir="rtl"] .nav-next .nav-label {
+    text-align: left;
+}
+[dir="rtl"] .section-header {
+    text-align: right;
+}
+[dir="rtl"] .section-header.center {
+    text-align: center;
+}
+
+/* ============================================================
+   11. RESPONSIVE FIXES
+   ============================================================ */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 2.5rem;
+    }
+    section.container {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    .about-story,
+    .about-tailors,
+    .about-workshop,
+    .about-achievements,
+    .svc-fabric,
+    .svc-pricing {
+        padding: 7rem 0;
+    }
+    .gal-section {
+        padding: 6rem 0;
+    }
+    .pick-card {
+        padding: 2.5rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    section.container {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .about-story,
+    .about-tailors,
+    .about-workshop,
+    .about-achievements,
+    .svc-fabric,
+    .svc-pricing {
+        padding: 5rem 0;
+    }
+    .gal-section {
+        padding: 5rem 0;
+    }
+    .feature-card {
+        padding: 2.5rem;
+    }
+    .pick-card {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+    .pick-img {
+        width: 100%;
+        height: 200px;
+    }
+    .blog-card > * {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .blog-card p {
+        padding-bottom: 1.5rem;
+    }
+    .btn {
+        padding: 0.9rem 2rem;
+    }
+    .hero-btns {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hero-btns .btn {
+        width: 100%;
+        min-width: unset;
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    .btn {
+        width: 100%;
+        max-width: 320px;
+    }
+    .hero-btns .btn {
+        max-width: 100%;
+    }
+}
+
+/* ============================================================
+   12. CONTACT PAGE — STYLE NORMALIZATION
+   ============================================================ */
+
+/* Contact hero — fix margin-top to use nav-height variable */
+.page-hero {
+    margin-top: var(--nav-height, 90px);
+    height: 50vh;
+    min-height: 400px;
+}
+
+.page-hero h1 {
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    letter-spacing: -0.03em;
+    line-height: 0.95;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+.page-hero p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    opacity: 0.85;
+}
+
+/* Contact cards — remove rounded corners, align with editorial aesthetic */
+.contact-card {
+    border-radius: 0;
+    padding: 3.5rem 2.5rem;
+}
+
+/* Contact form wrapper — remove rounded corners */
+.form-wrapper,
+.hours-grid {
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid var(--color-border);
+}
+
+/* Contact form inputs — consistent with site style */
+.form-group input,
+.form-group textarea,
+.form-group select {
+    border-radius: 0;
+    padding: 1rem 1.25rem;
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--color-accent);
+    box-shadow: none;
+    outline: none;
+}
+
+/* Override contact.css btn which re-defines .btn with wrong styles */
+.contact-page .btn,
+.form-wrapper .btn,
+.form-wrapper .btn-primary {
+    display: inline-flex;
+    border-radius: 0;
+    font-weight: 500;
+    font-size: 0.82rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    width: 100%;
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-primary);
+    border: 1px solid var(--color-text-primary);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+.form-wrapper .btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-text-primary);
+    transform: none;
+    box-shadow: none;
+}
+
+/* Social icons — remove rotation on hover, keep it clean */
+.social-links-large .social-icon {
+    border-radius: 0;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.social-links-large .social-icon:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* ============================================================
+   13. AUTH PAGES — STYLE NORMALIZATION
+   ============================================================ */
+
+/* Remove rounded corners from auth container */
+.auth-container {
+    border-radius: 0;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+/* Auth section — fix top offset */
+.auth-section {
+    margin-top: 0;
+    padding-top: calc(var(--nav-height, 90px) + 3rem);
+    padding-bottom: 6rem;
+}
+
+/* Auth form inputs */
+.auth-form-container .form-group input,
+.auth-form-container .form-group select {
+    border-radius: 0;
+}
+
+/* Auth submit button */
+.auth-submit-btn,
+.auth-form-container .btn-primary {
+    border-radius: 0;
+    font-weight: 500;
+    font-size: 0.82rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    transform: none;
+}
+.auth-submit-btn:hover,
+.auth-form-container .btn-primary:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* ============================================================
+   14. FAQ PAGE — TYPOGRAPHY & SPACING NORMALIZATION
+   ============================================================ */
+
+/* FAQ hero — same treatment as contact */
+.faq-hero,
+.faq-page .page-hero {
+    margin-top: var(--nav-height, 90px);
+}
+
+/* ============================================================
+   15. NAVIGATION BAR — SUBTLE CONSISTENCY FIXES
+   ============================================================ */
+
+/* Ensure nav-link active state is always gold */
+.nav-link.active {
+    color: var(--color-accent);
+}
+
+/* Icon buttons — consistent sizing */
+.icon-btn {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: var(--color-text-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    border-radius: 0;
+}
+.icon-btn:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+/* ============================================================
+   16. FOOTER — CONSISTENT SPACING
+   ============================================================ */
+
+.footer {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.footer-top {
+    margin-bottom: 5rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 2rem;
+}
+
+/* ============================================================
+   17. SCROLL ANIMATIONS — PREVENT LAYOUT SHIFT
+   ============================================================ */
+
+/* Ensure reveal elements don't cause horizontal overflow */
+.reveal,
+.reveal-up,
+.reveal-left,
+.reveal-right {
+    overflow: hidden; /* prevent horizontal bleed from transform */
+}
+
+/* However, grids and flex containers should not clip children */
+.features-grid.reveal,
+.services-grid.reveal,
+.tailors-grid.reveal,
+.blog-grid.reveal,
+.fabric-grid.reveal {
+    overflow: visible;
+}
+
+/* ============================================================
+   18. BACK TO TOP BUTTON — CONSISTENT STYLE
+   ============================================================ */
+
+.back-to-top {
+    border-radius: 0;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-accent);
+    color: #000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.back-to-top:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-4px);
+}
+

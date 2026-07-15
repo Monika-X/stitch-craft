@@ -1,4 +1,4 @@
- components.css */
+/* components.css */
 
 /* Reusable Containers */
 .container {
@@ -327,9 +327,11 @@
 [href*="home2"] .section-title {
     font-family: var(--font-heading);
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: clamp(3rem, 5vw, 4.2rem);
     color: var(--text-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
 }
 [href*="home2"] .section-subtitle {
     letter-spacing: 4px;
@@ -369,8 +371,9 @@
     font-weight: 600;
 }
 .hero-split-content h1 {
-    font-size: clamp(3.5rem, 5vw, 5rem);
-    line-height: 1.1;
+    font-size: clamp(4rem, 6vw, 6rem);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
     margin-bottom: 2rem;
     font-family: var(--font-heading);
     color: var(--text-color);
@@ -417,7 +420,7 @@
 
 /* Bespoke Journey - Clean Alternating Layout */
 .bespoke-journey {
-    padding: 8rem 0;
+    padding: 10rem 0 8rem 0;
     background-color: var(--card-bg);
     position: relative;
 }
@@ -456,7 +459,8 @@
     object-fit: cover;
 }
 .journey-text {
-    padding: 2rem 0;
+    padding: 2rem 0 2rem 2.5rem;
+    border-left: 1px solid var(--color-accent);
 }
 .journey-text h3 {
     font-size: 2.2rem;
@@ -464,6 +468,7 @@
     color: var(--text-color);
     font-family: var(--font-heading);
     font-weight: 400;
+    letter-spacing: -0.01em;
 }
 .journey-text p {
     font-size: 1.1rem;
@@ -750,17 +755,19 @@
 [href*="about"] .section-title {
     font-family: var(--font-heading);
     font-weight: 400;
-    font-size: 3rem;
+    font-size: clamp(3rem, 5vw, 4.2rem);
     color: var(--text-color);
     margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
 }
 [href*="about"] .section-subtitle {
     letter-spacing: 4px;
     color: var(--color-accent);
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
     display: block;
 }
 
@@ -799,20 +806,22 @@
     padding: 0 5%;
 }
 .about-hero-content .section-title {
-    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    font-size: clamp(4rem, 6vw, 6rem);
     color: #fff;
-    line-height: 1.1;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
     margin-bottom: 2rem;
 }
 .about-hero-content p {
-    font-size: 1.25rem;
-    color: #ccc;
+    font-size: 1.35rem;
+    color: #ddd;
     line-height: 1.8;
+    font-weight: 300;
 }
 
 /* 2. Our Story - Offset Layout */
 .about-story {
-    padding: 10rem 0;
+    padding: 12rem 0;
     background-color: var(--bg-color);
 }
 .story-grid {
@@ -825,11 +834,11 @@
     padding-right: 2rem;
 }
 .story-text p {
-    font-size: 1.1rem;
-    line-height: 2;
+    font-size: 1.15rem;
+    line-height: 2.1;
     color: var(--text-color);
     opacity: 0.8;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 .story-image-wrap {
     position: relative;
@@ -1079,10 +1088,11 @@
 .svc-section-title {
     font-family: var(--font-heading);
     font-weight: 400;
-    font-size: 2.8rem;
+    font-size: clamp(3rem, 5vw, 4.2rem);
     color: var(--text-color);
     margin-bottom: 1.5rem;
-    line-height: 1.2;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
 }
 .svc-section-title.light { color: #ffffff; }
 
@@ -1136,23 +1146,25 @@
 }
 .svc-hero-title {
     font-family: var(--font-heading);
-    font-size: clamp(3.5rem, 7vw, 6rem);
+    font-size: clamp(4rem, 7vw, 6.5rem);
     font-weight: 400;
     color: #fff;
-    line-height: 1;
-    margin-bottom: 1.5rem;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    margin-bottom: 2rem;
 }
 .svc-hero-content p {
-    font-size: 1.1rem;
-    color: rgba(255,255,255,0.75);
+    font-size: 1.3rem;
+    color: rgba(255,255,255,0.85);
     line-height: 1.8;
     margin-bottom: 2.5rem;
     max-width: 500px;
+    font-weight: 300;
 }
 
 /* ---- 2 & 3. SERVICE DETAIL SECTIONS ---- */
 .svc-detail {
-    padding: 9rem 0;
+    padding: 12rem 0;
     background-color: var(--bg-color);
 }
 .svc-detail.alt-bg {
@@ -1205,11 +1217,11 @@
     font-weight: 600;
 }
 .svc-desc {
-    font-size: 1.05rem;
-    line-height: 1.9;
+    font-size: 1.15rem;
+    line-height: 2.1;
     color: var(--text-color);
     opacity: 0.8;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 .svc-features {
     list-style: none;
@@ -1271,7 +1283,7 @@
 /* ---- 4. ALTERATION SERVICES ---- */
 .svc-alterations {
     background-color: #111111;
-    padding: 9rem 0;
+    padding: 12rem 0;
 }
 .svc-alt-header {
     text-align: center;
@@ -1291,9 +1303,9 @@
 }
 .svc-alt-card {
     background: #181818;
-    padding: 3rem 2rem;
+    padding: 4rem 3rem;
     border-top: 2px solid transparent;
-    transition: border-color 0.3s ease, background 0.3s ease;
+    transition: border-color 0.4s ease, background 0.4s ease;
 }
 .svc-alt-card:hover,
 .svc-alt-card.featured {
@@ -1308,16 +1320,17 @@
 }
 .svc-alt-card h3 {
     font-family: var(--font-heading);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: #ffffff;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
 }
 .svc-alt-card p {
-    font-size: 0.9rem;
-    color: rgba(255,255,255,0.5);
-    line-height: 1.8;
-    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 2;
+    margin-bottom: 2.5rem;
 }
 .alt-price {
     font-family: var(--font-heading);
@@ -1649,7 +1662,7 @@
 /* ---- 1. GALLERY HERO ---- */
 .gal-hero {
     position: relative;
-    min-height: 60vh;
+    min-height: 80vh;
     display: flex;
     align-items: flex-end;
     padding-top: var(--nav-height, 80px);
@@ -1689,17 +1702,19 @@
 }
 .gal-hero-title {
     font-family: var(--font-heading);
-    font-size: clamp(3.5rem, 7vw, 6rem);
+    font-size: clamp(4rem, 7vw, 6.5rem);
     font-weight: 400;
     color: #fff;
-    line-height: 1;
-    margin-bottom: 1.2rem;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
 }
 .gal-hero-content p {
-    font-size: 1.1rem;
-    color: rgba(255,255,255,0.65);
-    line-height: 1.8;
-    max-width: 480px;
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.9;
+    max-width: 500px;
+    font-weight: 300;
 }
 
 /* ---- FILTER TABS ---- */
@@ -1735,7 +1750,7 @@
 
 /* ---- SECTION HEADER ---- */
 .gal-section {
-    padding: 6rem 0;
+    padding: 10rem 0;
 }
 .gal-section-header {
     margin-bottom: 4rem;
@@ -1755,9 +1770,11 @@
 .gal-section-title {
     font-family: var(--font-heading);
     font-weight: 400;
-    font-size: 2.6rem;
+    font-size: clamp(3rem, 5vw, 4.2rem);
     color: var(--text-color);
     margin: 0;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
 }
 .gal-section-title.light { color: #ffffff; }
 .gal-insta-sub {
@@ -1784,12 +1801,12 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.8s ease;
-  filter: grayscale(80%);
+  transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), filter 1s ease;
+  filter: grayscale(40%);
 }
 
 .gal-item:hover img {
-  transform: scale(1.08);
+  transform: scale(1.05);
   filter: grayscale(0%);
 }
 
@@ -2042,27 +2059,30 @@
 /* 1. Blog Hero */
 .blog-hero {
     position: relative;
-    min-height: 50vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--color-bg-primary);
-    padding-top: 90px;
+    padding-top: var(--nav-height, 90px);
     text-align: center;
     border-bottom: 1px solid var(--color-border);
 }
 .blog-hero h1 {
-    font-size: clamp(3.5rem, 6vw, 6rem);
+    font-size: clamp(4rem, 7vw, 6.5rem);
     font-weight: 400;
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-md);
     color: var(--color-text-primary);
-    letter-spacing: -1px;
+    letter-spacing: -0.03em;
+    line-height: 0.95;
+    font-family: var(--font-heading);
 }
 .blog-hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--color-text-secondary);
     max-width: 600px;
     margin: 0 auto;
+    font-weight: 300;
 }
 
 /* 2. Blog Categories */
@@ -2092,7 +2112,7 @@
 
 /* 3. Featured Blog */
 .blog-featured {
-    padding: var(--space-xl) 0;
+    padding: 12rem 0;
     background-color: var(--color-bg-primary);
 }
 .featured-article {
@@ -2133,10 +2153,12 @@
     margin-bottom: var(--space-md);
 }
 .featured-content h2 {
-    font-size: 2.8rem;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
     font-weight: 400;
     margin-bottom: var(--space-md);
-    line-height: 1.2;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-family: var(--font-heading);
 }
 .featured-content p {
     color: var(--color-text-secondary);
@@ -2181,7 +2203,7 @@
 
 /* 5. Blog Grid (Recent Articles) */
 .blog-grid-section {
-    padding: var(--space-xl) 0;
+    padding: 10rem 0;
     background-color: var(--color-bg-primary);
 }
 .blog-grid {
@@ -2286,11 +2308,12 @@
     border-bottom: 1px solid var(--color-border);
 }
 .article-hero-standard h1 {
-    font-size: clamp(3rem, 6vw, 5.5rem);
-    line-height: 1.1;
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    line-height: 1.05;
     margin: var(--space-md) 0;
     font-weight: 400;
     font-family: var(--font-heading);
+    letter-spacing: -0.02em;
 }
 .article-hero-standard .featured-img {
     width: 100%;
@@ -2317,11 +2340,12 @@
     padding: var(--space-xxl);
 }
 .hero-split-content h1 {
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
-    line-height: 1.1;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1.05;
     margin: var(--space-md) 0;
     font-weight: 400;
     font-family: var(--font-heading);
+    letter-spacing: -0.02em;
 }
 .hero-split-img {
     width: 100%;
@@ -2360,10 +2384,11 @@
 }
 .article-content h2 {
     font-family: var(--font-heading);
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 400;
     margin: var(--space-xxl) 0 var(--space-md);
-    line-height: 1.2;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
 }
 .article-content h3 {
     font-family: var(--font-heading);
