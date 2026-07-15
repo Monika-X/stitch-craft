@@ -46,7 +46,8 @@ section {
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: flex-end; /* Align content to bottom */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
   background-color: #111;
   color: #fff;
   padding: 0;
@@ -72,19 +73,24 @@ section {
 
 .hero-content {
   width: 100%;
-  padding-bottom: 8rem;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 6rem;
-  align-items: flex-end;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 90px; /* Offset for the navbar overlap so true visual center is maintained */
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
 }
 
 .hero h1 {
-  font-size: clamp(4rem, 8vw, 8rem);
+  font-size: clamp(3.5rem, 6vw, 6rem);
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   color: #fff;
-  line-height: 0.92;
+  line-height: 1.05;
   letter-spacing: -0.04em;
   font-family: var(--font-heading);
 }
@@ -92,23 +98,29 @@ section {
 .hero-text-block {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    align-items: center;
+    gap: 2.5rem;
 }
 
 .hero p {
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   color: #ddd;
   font-weight: 300;
-  line-height: 1.7;
-  border-left: 1px solid var(--color-accent);
-  padding-left: 2rem;
-  max-width: 500px;
+  line-height: 1.75;
+  border-left: none;
+  padding-left: 0;
+  max-width: none;
+  text-align: center;
 }
 
 .hero-btns {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 1.5rem;
+  flex-wrap: nowrap;
 }
+
 
 /* 2. Why Choose Us - Staggered Layout */
 .features-grid {
@@ -290,29 +302,88 @@ section {
     margin-top: 10rem;
 }
 
-.fabric-item img {
+.fabric-img-wrapper {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  height: 600px;
-  object-fit: cover;
-  filter: grayscale(20%);
+  height: 500px;
 }
 
-.fabric-item h3 {
-  position: absolute;
-  bottom: 2rem;
-  left: -2rem;
-  font-size: 4rem;
-  font-family: var(--font-heading);
-  color: var(--color-text-primary);
-  background: var(--color-bg-primary);
-  padding: 1rem 2rem;
-  margin: 0;
-  box-shadow: 20px 20px 60px var(--color-shadow);
-  font-weight: 400;
+.fabric-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%);
+  transition: transform 0.8s ease, filter 0.8s ease;
 }
-[dir="rtl"] .fabric-item h3 {
-    left: auto;
-    right: -2rem;
+
+.fabric-item:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.fabric-hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 100%); /* Black smoke effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.fabric-hover-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 1.5rem;
+  border: 2px solid var(--color-accent); /* Restored yellow frame boldly */
+  transform: scale(0.9);
+  transition: transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.7s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fabric-item:hover .fabric-hover-overlay {
+  opacity: 1;
+}
+
+.fabric-item:hover .fabric-hover-overlay::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.fabric-hover-overlay h3 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  color: #ffffff; /* White text as requested */
+  text-transform: uppercase; /* Full caps */
+  letter-spacing: 4px;
+  font-weight: 400;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s;
+  text-align: center;
+  padding: 0 2rem;
+  margin: 0;
+  text-shadow: none; /* No black background/shadow on text */
+  position: relative;
+  z-index: 2;
+}
+
+.fabric-item:hover .fabric-hover-overlay h3 {
+  transform: translateY(0) scale(1);
+}
+
+.fabric-text {
+  margin-top: 2rem;
+}
+
+.fabric-text p {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin: 0;
 }
 
 /* 5. Process / CTA - Dark Minimalist Frame */
@@ -424,9 +495,13 @@ section {
 /* Responsive adjustments */
 @media (max-width: 1024px) {
     .hero-content {
-        grid-template-columns: 1fr;
+        padding-bottom: 5rem;
+        gap: 2.5rem;
+    }
+    .hero-text-block {
+        flex-direction: column;
+        align-items: flex-start;
         gap: 2rem;
-        padding-bottom: 4rem;
     }
     .hero p {
         max-width: 600px;
@@ -441,11 +516,6 @@ section {
     .fabric-item:nth-child(2) {
         margin-top: 0;
     }
-    .fabric-item h3 {
-        left: 0;
-        bottom: 0;
-        font-size: 2.5rem;
-    }
     .process-steps {
         flex-direction: column;
         align-items: center;
@@ -455,6 +525,10 @@ section {
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 3.5rem;
+    }
+    .hero-btns {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .service-content h3 {
         font-size: 1.8rem;
@@ -472,9 +546,4 @@ section {
 }
 [data-theme="dark"] .feature-card::before {
     color: #fff;
-}
-[data-theme="dark"] .fabric-item h3 {
-    background: #111;
-    color: #fff;
-    box-shadow: 20px 20px 60px rgba(0,0,0,0.5);
 }
