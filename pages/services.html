@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - StitchCraft</title>
+    <meta name="description" content="Explore StitchCraft's full range of luxury tailoring services â€” bespoke suits, women's couture, expert alterations, and premium fabric selection.">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="nav-brand">Stitch<span>Craft</span></a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="home2.html" class="nav-link">Home 2</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="user-dropdown">
+                    <button class="icon-btn user-btn" aria-label="User Menu">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="login.html" class="dropdown-item">Login</a>
+                        <a href="signup.html" class="dropdown-item">Sign Up</a>
+                    </div>
+                </div>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button id="rtl-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- 1. HERO -->
+        <section class="svc-hero">
+            <div class="svc-hero-bg">
+                <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=1920" alt="Luxury tailoring atelier" loading="lazy">
+                <div class="svc-hero-overlay"></div>
+            </div>
+            <div class="container svc-hero-content reveal-up">
+                <span class="section-subtitle">World-Class Craftsmanship</span>
+                <h1 class="svc-hero-title">Our Services</h1>
+                <p>From bespoke menswear to couture women's garments, every service is delivered with uncompromising precision and care.</p>
+                <a href="#appointment" class="btn btn-luxury">Book a Consultation</a>
+            </div>
+        </section>
+
+        <!-- 2. MEN'S TAILORING -->
+        <section class="svc-detail container reveal" id="mens-tailoring">
+            <div class="svc-detail-grid">
+                <div class="svc-detail-image">
+                    <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=900" alt="Bespoke men's suit" loading="lazy">
+                    <div class="svc-badge"><span>Est. Turnaround</span><strong>4â€“6 Weeks</strong></div>
+                </div>
+                <div class="svc-detail-text">
+                    <span class="section-subtitle">Section 01</span>
+                    <h2 class="svc-section-title">Men's Bespoke Tailoring</h2>
+                    <p class="svc-desc">StitchCraft's men's bespoke program is built for the discerning gentleman who demands perfection. Every garment is hand-crafted from scratch using your precise measurements and personal style preferences, delivered with meticulous attention to every stitch and seam.</p>
+                    <ul class="svc-features">
+                        <li><span class="feat-dot"></span>Full bespoke suit â€” single & double breasted</li>
+                        <li><span class="feat-dot"></span>Tuxedos & formal black-tie attire</li>
+                        <li><span class="feat-dot"></span>Dress shirts, trousers & waistcoats</li>
+                        <li><span class="feat-dot"></span>Overcoats & sport jackets</li>
+                        <li><span class="feat-dot"></span>3+ fitting appointments included</li>
+                        <li><span class="feat-dot"></span>Choice of 500+ premium fabrics</li>
+                    </ul>
+                    <div class="svc-meta-row">
+                        <div class="svc-meta-card">
+                            <span class="meta-label">Starting From</span>
+                            <span class="meta-value">$1,800</span>
+                        </div>
+                        <div class="svc-meta-card">
+                            <span class="meta-label">Turnaround</span>
+                            <span class="meta-value">4â€“6 Weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. WOMEN'S TAILORING -->
+        <section class="svc-detail alt-bg" id="womens-tailoring">
+            <div class="container">
+                <div class="svc-detail-grid reverse reveal">
+                    <div class="svc-detail-text">
+                        <span class="section-subtitle">Section 02</span>
+                        <h2 class="svc-section-title">Women's Couture Tailoring</h2>
+                        <p class="svc-desc">Our women's tailoring department celebrates the art of structure and femininity. Whether you require a power suit for the boardroom or an elegant gown for a formal occasion, our master tailors craft each garment to honor your unique silhouette.</p>
+                        <ul class="svc-features">
+                            <li><span class="feat-dot"></span>Custom women's suits & blazers</li>
+                            <li><span class="feat-dot"></span>Couture evening gowns & cocktail dresses</li>
+                            <li><span class="feat-dot"></span>Bridal & special occasion garments</li>
+                            <li><span class="feat-dot"></span>Tailored trousers, skirts & blouses</li>
+                            <li><span class="feat-dot"></span>Pattern drafting from scratch</li>
+                            <li><span class="feat-dot"></span>Multiple fittings until perfection</li>
+                        </ul>
+                        <div class="svc-meta-row">
+                            <div class="svc-meta-card">
+                                <span class="meta-label">Starting From</span>
+                                <span class="meta-value">$1,400</span>
+                            </div>
+                            <div class="svc-meta-card">
+                                <span class="meta-label">Turnaround</span>
+                                <span class="meta-value">3â€“5 Weeks</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="svc-detail-image">
+                        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=900" alt="Women's bespoke tailoring" loading="lazy">
+                        <div class="svc-badge"><span>Est. Turnaround</span><strong>3â€“5 Weeks</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ALTERATION SERVICES -->
+        <section class="svc-alterations" id="alterations">
+            <div class="container">
+                <div class="svc-alt-header reveal">
+                    <span class="section-subtitle">Section 03</span>
+                    <h2 class="svc-section-title light">Expert Alteration Services</h2>
+                    <p class="svc-alt-intro">Even the finest off-the-rack garment can be elevated with expert alterations. Our tailors perform meticulous adjustments to ensure every piece fits as if it were made for you alone.</p>
+                </div>
+                <div class="svc-alt-grid reveal">
+                    <div class="svc-alt-card">
+                        <div class="alt-icon">âœ¦</div>
+                        <h3>Jacket & Suit Adjustments</h3>
+                        <p>Sleeve shortening, shoulder reshaping, waist suppression, and lining repairs.</p>
+                        <div class="alt-price">From $85</div>
+                        <div class="alt-time">Turnaround: 3â€“5 Days</div>
+                    </div>
+                    <div class="svc-alt-card featured">
+                        <div class="alt-icon">âœ¦</div>
+                        <h3>Trouser Alterations</h3>
+                        <p>Hemming, tapering, seat adjustments, and waistband resizing for a perfect drape.</p>
+                        <div class="alt-price">From $45</div>
+                        <div class="alt-time">Turnaround: 2â€“4 Days</div>
+                    </div>
+                    <div class="svc-alt-card">
+                        <div class="alt-icon">âœ¦</div>
+                        <h3>Dress & Gown Restyling</h3>
+                        <p>Taking in or letting out formal gowns, adding structure, redesigning necklines and straps.</p>
+                        <div class="alt-price">From $120</div>
+                        <div class="alt-time">Turnaround: 5â€“7 Days</div>
+                    </div>
+                    <div class="svc-alt-card">
+                        <div class="alt-icon">âœ¦</div>
+                        <h3>Shirt & Blouse Tailoring</h3>
+                        <p>Collar reshaping, cuff alterations, body tapering, and placket resizing.</p>
+                        <div class="alt-price">From $55</div>
+                        <div class="alt-time">Turnaround: 2â€“3 Days</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FABRIC SELECTION -->
+        <section class="svc-fabric container reveal" id="fabric-selection">
+            <div class="fabric-header center">
+                <span class="section-subtitle">Section 04</span>
+                <h2 class="svc-section-title">Premium Fabric Selection</h2>
+                <p>We source from the world's most prestigious mills â€” Loro Piana, Holland & Sherry, Scabal, and Dormeuil. Touch, feel, and choose from over 500 curated swatches across every weight, weave, and season.</p>
+            </div>
+            <div class="fabric-grid reveal">
+                <div class="fabric-swatch">
+                    <div class="swatch-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=600" alt="Merino Wool" loading="lazy"></div>
+                    <div class="swatch-info">
+                        <h4>Italian Merino Wool</h4>
+                        <span>Loro Piana Â· Super 150s</span>
+                    </div>
+                </div>
+                <div class="fabric-swatch">
+                    <div class="swatch-img"><img src="https://images.unsplash.com/photo-1585914924626-15adac1e6402?q=80&w=600" alt="English Tweed" loading="lazy"></div>
+                    <div class="swatch-info">
+                        <h4>English Herringbone Tweed</h4>
+                        <span>Holland & Sherry Â· Autumn/Winter</span>
+                    </div>
+                </div>
+                <div class="fabric-swatch">
+                    <div class="swatch-img"><img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=600" alt="Egyptian Cotton" loading="lazy"></div>
+                    <div class="swatch-info">
+                        <h4>Egyptian Cotton Poplin</h4>
+                        <span>Thomas Mason Â· 120s</span>
+                    </div>
+                </div>
+                <div class="fabric-swatch">
+                    <div class="swatch-img"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=600" alt="Silk Blend" loading="lazy"></div>
+                    <div class="swatch-info">
+                        <h4>Silk & Cashmere Blend</h4>
+                        <span>Scabal Â· Prestige Collection</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. PRICING PACKAGES -->
+        <section class="svc-pricing" id="pricing">
+            <div class="container">
+                <div class="pricing-header center reveal">
+                    <span class="section-subtitle">Section 05</span>
+                    <h2 class="svc-section-title">Pricing Packages</h2>
+                    <p>Transparent pricing for the world's finest tailoring. Every package includes a personal consultation and dedicated tailor.</p>
+                </div>
+                <div class="pricing-grid reveal">
+                    <!-- Essential -->
+                    <div class="pricing-card">
+                        <div class="pricing-top">
+                            <span class="pricing-tier">Essential</span>
+                            <div class="pricing-price"><sup>$</sup>895</div>
+                            <span class="pricing-unit">starting price</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Single-breasted bespoke suit</li>
+                            <li>2 fitting appointments</li>
+                            <li>Choice of 150+ fabrics</li>
+                            <li>Standard canvas construction</li>
+                            <li>4-week turnaround</li>
+                            <li class="na">Half-canvas upgrade</li>
+                            <li class="na">Rush delivery</li>
+                        </ul>
+                        <a href="#appointment" class="btn-pricing-outline">Book Appointment</a>
+                    </div>
+                    <!-- Premium Bespoke â€” featured -->
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge-label">Most Popular</div>
+                        <div class="pricing-top">
+                            <span class="pricing-tier">Premium Bespoke</span>
+                            <div class="pricing-price"><sup>$</sup>1,799</div>
+                            <span class="pricing-unit">starting price</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Single or double-breasted suit</li>
+                            <li>3 fitting appointments</li>
+                            <li>Choice of 350+ fabrics</li>
+                            <li>Full-canvas construction</li>
+                            <li>5â€“6 week turnaround</li>
+                            <li>Half-canvas upgrade included</li>
+                            <li class="na">Rush delivery</li>
+                        </ul>
+                        <a href="#appointment" class="btn-pricing-fill">Book Appointment</a>
+                    </div>
+                    <!-- Royal Atelier -->
+                    <div class="pricing-card">
+                        <div class="pricing-top">
+                            <span class="pricing-tier">Royal Atelier</span>
+                            <div class="pricing-price"><sup>$</sup>3,200</div>
+                            <span class="pricing-unit">starting price</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Fully bespoke multi-piece ensemble</li>
+                            <li>Unlimited fitting appointments</li>
+                            <li>Access to all 500+ fabrics</li>
+                            <li>Handmade full-canvas construction</li>
+                            <li>Priority 3â€“4 week turnaround</li>
+                            <li>Complimentary shirt & tie</li>
+                            <li>Rush delivery available</li>
+                        </ul>
+                        <a href="#appointment" class="btn-pricing-outline">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. APPOINTMENT CTA -->
+        <section class="svc-cta reveal" id="appointment">
+            <div class="svc-cta-inner">
+                <div class="svc-cta-content container">
+                    <span class="section-subtitle">Begin Today</span>
+                    <h2 class="svc-cta-title">Schedule Your<br>Measurement Appointment</h2>
+                    <p>Walk into our atelier or reach out to schedule a private consultation at your convenience. Our master tailors are ready to bring your vision to life.</p>
+                    <div class="svc-cta-details">
+                        <div class="cta-detail-item">
+                            <span class="cta-detail-label">Studio Hours</span>
+                            <span class="cta-detail-val">Monâ€“Sat, 9AMâ€“7PM EST</span>
+                        </div>
+                        <div class="cta-divider"></div>
+                        <div class="cta-detail-item">
+                            <span class="cta-detail-label">Appointments</span>
+                            <span class="cta-detail-val">In-Studio & At-Home Available</span>
+                        </div>
+                        <div class="cta-divider"></div>
+                        <div class="cta-detail-item">
+                            <span class="cta-detail-label">Phone</span>
+                            <span class="cta-detail-val">+1 (212) 555-0147</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-luxury">Request an Appointment</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <h3>StitchCraft</h3>
+                    <p>Bespoke tailoring and expert stitching services crafted for elegance.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="services.html">Our Services</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <div class="footer-links">
+                        <a href="faq.html">FAQ</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StitchCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/rtl.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,91 @@
+/* variables.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Z-index scale */
+  --z-loader: 9999;
+  --z-navbar: 1000;
+  --z-dropdown: 900;
+  --z-back-to-top: 800;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Light Theme Colors (Default) */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8f8f8;
+  --color-bg-tertiary: #f0f0f0;
+  
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #4a4a4a;
+  --color-text-muted: #888888;
+  
+  --color-accent: #c4a165; /* Rich gold/champagne */
+  --color-accent-hover: #b08d51;
+  
+  --color-border: #e0e0e0;
+  --color-shadow: rgba(0, 0, 0, 0.05);
+  
+  --color-navbar-bg: rgba(255, 255, 255, 0.95);
+  --color-footer-bg: #111111;
+  --color-footer-text: #ffffff;
+  
+  /* Aliases for newly added pages */
+  --bg-color: var(--color-bg-primary);
+  --surface-color: var(--color-bg-secondary);
+  --text-color: var(--color-text-primary);
+  --text-muted: var(--color-text-muted);
+  --primary-color: var(--color-accent);
+  --primary-dark: var(--color-accent-hover);
+  --secondary-color: var(--color-text-secondary);
+  --white: #ffffff;
+  --bg-secondary: var(--color-bg-secondary);
+  
+  --primary-rgb: 196, 161, 101; /* #c4a165 */
+  --secondary-rgb: 74, 74, 74; /* #4a4a4a */
+  --bg-color-rgb: 255, 255, 255;
+}
+
+[data-theme="dark"] {
+  /* Dark Theme Colors */
+  --color-bg-primary: #121212;
+  --color-bg-secondary: #1e1e1e;
+  --color-bg-tertiary: #2a2a2a;
+  
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #cccccc;
+  --color-text-muted: #999999;
+  
+  --color-accent: #d4b57e; /* Lighter gold for dark mode */
+  --color-accent-hover: #e0c699;
+  
+  --color-border: #333333;
+  --color-shadow: rgba(0, 0, 0, 0.3);
+  
+  --color-navbar-bg: rgba(18, 18, 18, 0.95);
+  --color-footer-bg: #0a0a0a;
+
+  /* Aliases for newly added pages */
+  --primary-rgb: 212, 181, 126; /* #d4b57e */
+  --secondary-rgb: 204, 204, 204; /* #cccccc */
+  --bg-color-rgb: 18, 18, 18;
+}

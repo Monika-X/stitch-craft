@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - StitchCraft</title>
+    <meta name="description" content="Explore StitchCraft's curated gallery of bespoke suits, couture gowns, traditional wear, and our artisan workshop.">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="nav-brand">Stitch<span>Craft</span></a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="home2.html" class="nav-link">Home 2</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="user-dropdown">
+                    <button class="icon-btn user-btn" aria-label="User Menu">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="login.html" class="dropdown-item">Login</a>
+                        <a href="signup.html" class="dropdown-item">Sign Up</a>
+                    </div>
+                </div>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button id="rtl-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- 1. HERO -->
+        <section class="gal-hero">
+            <div class="gal-hero-bg">
+                <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=1920" alt="Gallery hero">
+                <div class="gal-hero-overlay"></div>
+            </div>
+            <div class="container gal-hero-content reveal-up">
+                <span class="section-subtitle">Crafted With Pride</span>
+                <h1 class="gal-hero-title">Our Gallery</h1>
+                <p>A curated showcase of bespoke tailoring &mdash; from precision-cut suits to hand-sewn gowns, every piece tells a story.</p>
+            </div>
+        </section>
+
+        <!-- GALLERY FILTER TABS -->
+        <div class="gal-tabs container reveal">
+            <button class="gal-tab active" data-filter="all">All</button>
+            <button class="gal-tab" data-filter="mens">Men's</button>
+            <button class="gal-tab" data-filter="womens">Women's</button>
+            <button class="gal-tab" data-filter="wedding">Wedding</button>
+            <button class="gal-tab" data-filter="traditional">Traditional</button>
+            <button class="gal-tab" data-filter="workshop">Workshop</button>
+        </div>
+
+        <!-- 2. MEN'S COLLECTION -->
+        <section class="gal-section container" id="mens-collection">
+            <div class="gal-section-header reveal">
+                <span class="section-subtitle">Collection 01</span>
+                <h2 class="gal-section-title">Men's Collection</h2>
+            </div>
+            <div class="gal-masonry reveal">
+                <!-- 1 -->
+                <div class="gal-item tall" data-category="mens" data-src="https://i.pinimg.com/1200x/7b/bd/53/7bbd53f321f4f0ff4e0264f20be7fe25.jpg" data-caption="Bespoke Double-Breasted Navy Suit">
+                    <img src="https://i.pinimg.com/1200x/7b/bd/53/7bbd53f321f4f0ff4e0264f20be7fe25.jpg" alt="Bespoke Navy Suit" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Bespoke Double-Breasted Navy Suit</span></div>
+                </div>
+                <!-- 2 -->
+                <div class="gal-item" data-category="mens" data-src="https://i.pinimg.com/1200x/ed/41/b2/ed41b2a7eff5e5ce40921713fef4bced.jpg" data-caption="Classic Grey Wool Suit">
+                    <img src="https://i.pinimg.com/1200x/ed/41/b2/ed41b2a7eff5e5ce40921713fef4bced.jpg" alt="Grey Wool Suit" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Classic Grey Wool Suit</span></div>
+                </div>
+                <!-- 3 -->
+                <div class="gal-item" data-category="mens" data-src="https://i.pinimg.com/1200x/b1/0d/65/b10d6557819b33745c14d7fea6953f93.jpg" data-caption="Ivory Linen Summer Suit">
+                    <img src="https://i.pinimg.com/1200x/b1/0d/65/b10d6557819b33745c14d7fea6953f93.jpg" alt="Ivory Linen Suit" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Ivory Linen Summer Suit</span></div>
+                </div>
+                <!-- 4 -->
+                <div class="gal-item wide" data-category="mens" data-src="https://i.pinimg.com/736x/53/e9/6d/53e96d44558c1bffa10aa1bbc8537f57.jpg" data-caption="Black Tie Tuxedo &mdash; Evening Wear">
+                    <img src="https://i.pinimg.com/736x/53/e9/6d/53e96d44558c1bffa10aa1bbc8537f57.jpg" alt="Black Tuxedo" onerror="this.src='https://images.unsplash.com/photo-1502743780242-f10d2ce370f3?q=80&w=800'" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Black Tie Tuxedo &mdash; Evening Wear</span></div>
+                </div>
+                <!-- 5 -->
+                <div class="gal-item" data-category="mens" data-src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?q=80&w=1200" data-caption="Chalk-Stripe Charcoal Suit">
+                    <img src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?q=80&w=800" alt="Charcoal Suit" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Chalk-Stripe Charcoal Suit</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. WOMEN'S COLLECTION -->
+        <section class="gal-section gal-alt-bg" id="womens-collection">
+            <div class="container">
+                <div class="gal-section-header reveal">
+                    <span class="section-subtitle">Collection 02</span>
+                    <h2 class="gal-section-title">Women's Collection</h2>
+                </div>
+                <div class="gal-row-4 reveal">
+                    <!-- 6 -->
+                    <div class="gal-item portrait" data-category="womens" data-src="https://i.pinimg.com/736x/0e/4b/34/0e4b343e41de58f47be54b90d73d55fa.jpg" data-caption="Couture Evening Gown">
+                        <img src="https://i.pinimg.com/736x/0e/4b/34/0e4b343e41de58f47be54b90d73d55fa.jpg" alt="Evening Gown" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Couture Evening Gown</span></div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="gal-item portrait" data-category="womens" data-src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1200" data-caption="Tailored Women's Power Suit">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=600" alt="Women's Power Suit" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Tailored Women's Power Suit</span></div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="gal-item portrait" data-category="womens" data-src="https://i.pinimg.com/736x/78/60/fa/7860fa46988089cd8128b1c7d7a8cd49.jpg" data-caption="Silk Cocktail Dress">
+                        <img src="https://i.pinimg.com/736x/78/60/fa/7860fa46988089cd8128b1c7d7a8cd49.jpg" alt="Cocktail Dress" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Silk Cocktail Dress</span></div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="gal-item portrait" data-category="womens" data-src="https://i.pinimg.com/736x/dc/f0/ee/dcf0ee72bd9654828871d325f5f47287.jpg" data-caption="Structured Blazer &amp; Trouser Set">
+                        <img src="https://i.pinimg.com/736x/dc/f0/ee/dcf0ee72bd9654828871d325f5f47287.jpg" alt="Blazer Set" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Structured Blazer &amp; Trouser Set</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. WEDDING COLLECTION -->
+        <section class="gal-section container" id="wedding-collection">
+            <div class="gal-section-header reveal">
+                <span class="section-subtitle">Collection 03</span>
+                <h2 class="gal-section-title">Wedding Collection</h2>
+            </div>
+            <div class="gal-wedding-grid reveal">
+                <!-- 10 -->
+                <div class="gal-item wedding-hero" data-category="wedding" data-src="https://i.pinimg.com/1200x/79/0f/63/790f63d09d8d6d50c06fef2964b294e9.jpg" data-caption="The Grand Bridal Suite">
+                    <img src="https://i.pinimg.com/1200x/79/0f/63/790f63d09d8d6d50c06fef2964b294e9.jpg" alt="Bridal" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">The Grand Bridal Suite</span></div>
+                </div>
+                <!-- 11 -->
+                <div class="gal-item" data-category="wedding" data-src="https://i.pinimg.com/1200x/10/95/59/109559e858c8f6ae551a4f5c8abc1882.jpg" data-caption="Groom's Bespoke Morning Suit">
+                    <img src="https://i.pinimg.com/736x/10/95/59/109559e858c8f6ae551a4f5c8abc1882.jpg" alt="Morning Suit" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Groom's Bespoke Morning Suit</span></div>
+                </div>
+                <!-- 12 -->
+                <div class="gal-item" data-category="wedding" data-src="https://i.pinimg.com/736x/e8/0c/5f/e80c5f8e523c8d7edaa749a856860bb1.jpg" data-caption="Groomsmen Ensemble &mdash; Ivory &amp; Gold">
+                    <img src="https://i.pinimg.com/736x/e8/0c/5f/e80c5f8e523c8d7edaa749a856860bb1.jpg" alt="Groomsmen" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Groomsmen Ensemble &mdash; Ivory &amp; Gold</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. TRADITIONAL WEAR -->
+        <section class="gal-section gal-dark-bg" id="traditional-wear">
+            <div class="container">
+                <div class="gal-section-header reveal">
+                    <span class="section-subtitle">Collection 04</span>
+                    <h2 class="gal-section-title light">Traditional Wear</h2>
+                </div>
+                <div class="gal-trad-grid reveal">
+                    <!-- 13 -->
+                    <div class="gal-item" data-category="traditional" data-src="https://i.pinimg.com/1200x/cd/74/0b/cd740bee6bc35fd3f5cfef677658c7b0.jpg" data-caption="Heritage Wool Sherwani">
+                        <img src="https://i.pinimg.com/736x/cd/74/0b/cd740bee6bc35fd3f5cfef677658c7b0.jpg" alt="Sherwani" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Heritage Wool Sherwani</span></div>
+                    </div>
+                    <!-- 14 -->
+                    <div class="gal-item tall" data-category="traditional" data-src="https://i.pinimg.com/736x/3c/a1/01/3ca1012682e3387618ccb9c46a72c583.jpg" data-caption="Ceremonial Embroidered Kurta">
+                        <img src="https://i.pinimg.com/736x/3c/a1/01/3ca1012682e3387618ccb9c46a72c583.jpg" alt="Embroidered Kurta" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Ceremonial Embroidered Kurta</span></div>
+                    </div>
+                    <!-- 15 -->
+                    <div class="gal-item" data-category="traditional" data-src="https://i.pinimg.com/736x/15/1f/35/151f358436da8554779133d6d656dafa.jpg" data-caption="Brocade Bandhgala Jacket">
+                        <img src="https://i.pinimg.com/736x/15/1f/35/151f358436da8554779133d6d656dafa.jpg" alt="Bandhgala" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Brocade Bandhgala Jacket</span></div>
+                    </div>
+                    <!-- 16 -->
+                    <div class="gal-item" data-category="traditional" data-src="https://i.pinimg.com/736x/1d/93/a0/1d93a0908aeea20fc35bbf46170a5810.jpg" data-caption="Hand-Woven Nehru Suit">
+                        <img src="https://i.pinimg.com/736x/1d/93/a0/1d93a0908aeea20fc35bbf46170a5810.jpg" alt="Nehru Suit" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Hand-Woven Nehru Suit</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. WORKSHOP GALLERY -->
+        <section class="gal-section container" id="workshop-gallery">
+            <div class="gal-section-header reveal">
+                <span class="section-subtitle">Behind The Scenes</span>
+                <h2 class="gal-section-title">Workshop Gallery</h2>
+            </div>
+            <div class="gal-workshop-grid reveal">
+                <!-- 17 -->
+                <div class="gal-item wide" data-category="workshop" data-src="https://i.pinimg.com/1200x/6c/dd/70/6cdd709cc18d38cddd9e0162de89d0a9.jpg" data-caption="The Atelier &mdash; Production Floor">
+                    <img src="https://i.pinimg.com/736x/6c/dd/70/6cdd709cc18d38cddd9e0162de89d0a9.jpg" alt="Atelier" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">The Atelier &mdash; Production Floor</span></div>
+                </div>
+                <!-- 18 -->
+                <div class="gal-item" data-category="workshop" data-src="https://i.pinimg.com/1200x/54/ad/c1/54adc100e7b4ac3f104e2a60f1779e61.jpg" data-caption="Master Tailor &mdash; Hand Stitching">
+                    <img src="https://i.pinimg.com/1200x/54/ad/c1/54adc100e7b4ac3f104e2a60f1779e61.jpg" alt="Hand Stitching" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Master Tailor &mdash; Hand Stitching</span></div>
+                </div>
+                <!-- 19 -->
+                <div class="gal-item" data-category="workshop" data-src="https://i.pinimg.com/1200x/06/ff/62/06ff62087558884737f98ed8324a30b4.jpg" data-caption="Pattern Cutting &amp; Drafting">
+                    <img src="https://i.pinimg.com/736x/06/ff/62/06ff62087558884737f98ed8324a30b4.jpg" alt="Pattern Cutting" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Pattern Cutting &amp; Drafting</span></div>
+                </div>
+                <!-- 20 -->
+                <div class="gal-item" data-category="workshop" data-src="https://i.pinimg.com/1200x/f1/a0/7b/f1a07bdc9aeee1049e8bb7a871f03378.jpg" data-caption="Fitting Room &mdash; First Basting">
+                    <img src="https://i.pinimg.com/1200x/f1/a0/7b/f1a07bdc9aeee1049e8bb7a871f03378.jpg" alt="Fitting Room" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Fitting Room &mdash; First Basting</span></div>
+                </div>
+                <!-- 21 -->
+                <div class="gal-item" data-category="workshop" data-src="https://i.pinimg.com/736x/d3/1e/a7/d31ea7296478885e7a52eda26aa0d722.jpg" data-caption="Fabric Library &mdash; Swatches &amp; Samples">
+                    <img src="https://i.pinimg.com/736x/d3/1e/a7/d31ea7296478885e7a52eda26aa0d722.jpg" alt="Fabric Library" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Fabric Library &mdash; Swatches &amp; Samples</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. INSTAGRAM-STYLE GALLERY -->
+        <section class="gal-section gal-insta-bg" id="instagram-gallery">
+            <div class="container">
+                <div class="gal-section-header reveal center-align">
+                    <span class="section-subtitle">Follow Our Work</span>
+                    <h2 class="gal-section-title">Latest Creations</h2>
+                    <p class="gal-insta-sub">Captured moments of craftsmanship, artistry, and elegance.</p>
+                </div>
+                <div class="gal-insta-grid reveal">
+                    <!-- 22 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://i.pinimg.com/1200x/0e/43/0e/0e430e6431058871c21d575d31907af1.jpg" data-caption="Perfect Lapel &mdash; A Tailor's Pride">
+                        <img src="https://i.pinimg.com/1200x/0e/43/0e/0e430e6431058871c21d575d31907af1.jpg" alt="Lapel Detail" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Perfect Lapel &mdash; A Tailor's Pride</span>
+                        </div>
+                    </div>
+                    <!-- 23 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://i.pinimg.com/736x/c0/ba/ae/c0baaef7ef0a2ebe44fafa81b120e99c.jpg" data-caption="Texture &amp; Weave &mdash; Merino Twill">
+                        <img src="https://i.pinimg.com/736x/c0/ba/ae/c0baaef7ef0a2ebe44fafa81b120e99c.jpg" alt="Fabric Texture" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Texture &amp; Weave &mdash; Merino Twill</span>
+                        </div>
+                    </div>
+                    <!-- 24 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://i.pinimg.com/1200x/cf/b0/ed/cfb0ed76ddf7600d7bc6c803b599026a.jpg" data-caption="The Finishing Touch &mdash; Buttonholes">
+                        <img src="https://i.pinimg.com/736x/cf/b0/ed/cfb0ed76ddf7600d7bc6c803b599026a.jpg" alt="Buttonholes" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">The Finishing Touch &mdash; Buttonholes</span>
+                        </div>
+                    </div>
+                    <!-- 25 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://i.pinimg.com/1200x/a8/bf/1d/a8bf1d897e431973f38458083acd4e70.jpg" data-caption="Wedding Season &mdash; In Studio">
+                        <img src="https://i.pinimg.com/736x/a8/bf/1d/a8bf1d897e431973f38458083acd4e70.jpg" alt="Wedding" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Wedding Season &mdash; In Studio</span>
+                        </div>
+                    </div>
+                    <!-- 26 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://i.pinimg.com/1200x/c5/4b/b3/c54bb3353c78474060cb71bdb6c0f3ef.jpg" data-caption="Grey Flannel &mdash; Classic Excellence">
+                        <img src="https://i.pinimg.com/736x/c5/4b/b3/c54bb3353c78474060cb71bdb6c0f3ef.jpg" alt="Grey Flannel" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Grey Flannel &mdash; Classic Excellence</span>
+                        </div>
+                    </div>
+                    <!-- 27 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://i.pinimg.com/1200x/7a/39/82/7a39828f4118a25da088eaf6e175dde0.jpg" data-caption="Women's Couture &mdash; Ready for the Evening">
+                        <img src="https://i.pinimg.com/736x/7a/39/82/7a39828f4118a25da088eaf6e175dde0.jpg" alt="Couture" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Women's Couture &mdash; Ready for the Evening</span>
+                        </div>
+                    </div>
+                    <!-- 28 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://i.pinimg.com/1200x/13/01/66/130166e13f1841660071591424443a9d.jpg" data-caption="Atelier Morning &mdash; The Light Before Work">
+                        <img src="https://i.pinimg.com/736x/13/01/66/130166e13f1841660071591424443a9d.jpg" alt="Atelier Morning" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Atelier Morning &mdash; The Light Before Work</span>
+                        </div>
+                    </div>
+                    <!-- 29 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://i.pinimg.com/1200x/68/9d/dc/689ddc9ae51677dea1f087399f771f7a.jpg" data-caption="Chalk Line &mdash; Precision in Every Mark">
+                        <img src="https://i.pinimg.com/736x/68/9d/dc/689ddc9ae51677dea1f087399f771f7a.jpg" alt="Chalk Line" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Chalk Line &mdash; Precision in Every Mark</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div id="gal-lightbox" class="gal-lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+        <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+        <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous">&#8249;</button>
+        <button class="lb-nav lb-next" id="lb-next" aria-label="Next">&#8250;</button>
+        <div class="lb-content">
+            <img id="lb-img" src="" alt="StitchCraft Image" loading="lazy">
+            <div class="lb-caption" id="lb-caption"></div>
+            <div class="lb-counter" id="lb-counter"></div>
+        </div>
+        <div class="lb-backdrop" id="lb-backdrop"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <h3>StitchCraft</h3>
+                    <p>Bespoke tailoring and expert stitching services crafted for elegance.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="services.html">Our Services</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <div class="footer-links">
+                        <a href="faq.html">FAQ</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StitchCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/rtl.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StitchCraft | Premium Tailoring Studio</title>
+    <meta name="description" content="StitchCraft - A luxurious and premium tailoring & stitching studio offering bespoke clothing and expert alterations.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="./index.html" class="nav-brand">Stitch<span>Craft</span></a>
+            
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-link active">Home</a></li>
+                <li><a href="./pages/home2.html" class="nav-link">Home 2</a></li>
+                <li><a href="./pages/services.html" class="nav-link">Services</a></li>
+                <li><a href="./pages/blog.html" class="nav-link">Blog</a></li>
+                <li><a href="./pages/gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="./pages/about.html" class="nav-link">About Us</a></li>
+                <li><a href="./pages/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <div class="user-dropdown">
+                    <button class="icon-btn user-btn" aria-label="User Menu">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="./pages/login.html" class="dropdown-item">Login</a>
+                        <a href="./pages/signup.html" class="dropdown-item">Sign Up</a>
+                    </div>
+                </div>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <!-- Simple moon icon SVG -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button id="rtl-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- 1. Hero Banner -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content reveal">
+                <h1>Bespoke Elegance, Masterfully Crafted</h1>
+                <div class="hero-text-block">
+                    <p>Discover the art of true bespoke tailoring. We craft garments that fit your body and your lifestyle with unparalleled precision and luxury.</p>
+                    <div class="hero-btns">
+                        <a href="./pages/contact.html" class="btn btn-primary">Book Appointment</a>
+                        <a href="./pages/services.html" class="btn btn-outline" style="color:#fff; border-color:#fff;">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Why Choose StitchCraft -->
+        <section class="features container reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Our Promise</span>
+                <h2 class="section-title">Why Choose StitchCraft</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg>
+                    </div>
+                    <h3>Bespoke Fit</h3>
+                    <p>Every garment is precisely cut and stitched to your unique measurements for an absolutely flawless fit.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <h3>Master Craftsmanship</h3>
+                    <p>Our experienced tailors utilize time-honored techniques handed down through generations.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                    </div>
+                    <h3>Premium Fabrics</h3>
+                    <p>We source only the finest fabrics from world-renowned mills across Italy and England.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Featured Tailoring Services -->
+        <section class="services reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">What We Do</span>
+                    <h2 class="section-title">Featured Tailoring Services</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <img src="./assets/images/bespoke-suits.jpg" alt="Bespoke Suits" class="service-img" loading="lazy">
+                        <div class="service-content">
+                            <h3>Bespoke Suits</h3>
+                            <p>Handcrafted suits tailored to perfection.</p>
+                        </div>
+                    </div>
+                    <div class="service-card reveal">
+                        <img src="./assets/images/custom-shirts.jpg" alt="Custom Shirts" class="service-img" loading="lazy">
+                        <div class="service-content">
+                            <h3>Custom Shirts</h3>
+                            <p>Shirts made from the finest Egyptian cotton.</p>
+                        </div>
+                    </div>
+                    <div class="service-card reveal">
+                        <img src="./assets/images/wardrobe.jpg" alt="Expert Alterations" class="service-img" loading="lazy">
+                        <div class="service-content">
+                            <h3>Expert Alterations</h3>
+                            <p>Refining your existing wardrobe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Premium Fabric Collection -->
+        <section class="fabrics container reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Materials</span>
+                <h2 class="section-title">Premium Fabric Collection</h2>
+            </div>
+            <div class="fabrics-grid">
+                <div class="fabric-item reveal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Royal_Winter_Fair_Wool_2.jpg" alt="Italian Wool" class="fabric-img" loading="lazy">
+                    <div class="fabric-overlay"><h4>Italian Wool</h4></div>
+                </div>
+                <div class="fabric-item reveal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Popel_101.jpg" alt="Egyptian Cotton" class="fabric-img" loading="lazy">
+                    <div class="fabric-overlay"><h4>Egyptian Cotton</h4></div>
+                </div>
+                <div class="fabric-item reveal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Silk_raw_01a.jpg" alt="Pure Silk" class="fabric-img" loading="lazy">
+                    <div class="fabric-overlay"><h4>Pure Silk</h4></div>
+                </div>
+                <div class="fabric-item reveal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Kaschmirschal_1.jpg" alt="Scottish Cashmere" class="fabric-img" loading="lazy">
+                    <div class="fabric-overlay"><h4>Scottish Cashmere</h4></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Our Tailoring Process -->
+        <section class="process reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">How It Works</span>
+                    <h2 class="section-title">Our Tailoring Process</h2>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-step reveal">
+                        <div class="step-number">1</div>
+                        <h3>Consultation</h3>
+                        <p>Discuss your style, select fabrics, and define the garment's purpose.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">2</div>
+                        <h3>Measurement</h3>
+                        <p>Over 30 precise measurements are taken to ensure an exacting fit.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">3</div>
+                        <h3>The Fitting</h3>
+                        <p>Try on the basted garment where we refine the silhouette.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">4</div>
+                        <h3>Delivery</h3>
+                        <p>Final adjustments are made, and your masterpiece is ready.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Customer Testimonials -->
+        <section class="testimonials container reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Reviews</span>
+                <h2 class="section-title">Customer Testimonials</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <p class="testimonial-text">"The bespoke suit I had made for my wedding was nothing short of perfection. The fit, the fabric, and the attention to detail are unparalleled."</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Client 1" class="client-img" loading="lazy">
+                        <div class="client-details">
+                            <h4>James Harrison</h4>
+                            <p>CEO, Tech Corp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <p class="testimonial-text">"StitchCraft transformed my wardrobe. Their alterations breathed new life into my favorite pieces. Truly master craftsmen."</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Client 2" class="client-img" loading="lazy">
+                        <div class="client-details">
+                            <h4>Sarah Jenkins</h4>
+                            <p>Creative Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <p class="testimonial-text">"I have never worn a shirt that fits as perfectly as the custom ones I ordered here. I will be a lifelong client."</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" alt="Client 3" class="client-img" loading="lazy">
+                        <div class="client-details">
+                            <h4>Michael Reed</h4>
+                            <p>Attorney at Law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Call To Action -->
+        <section class="cta reveal">
+            <div class="cta-content">
+                <h2>Experience True Bespoke</h2>
+                <p>Schedule your private consultation and fitting with our master tailors today.</p>
+                <a href="./pages/contact.html" class="btn btn-primary">Book Your Fitting</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <h3>StitchCraft</h3>
+                    <p>Bespoke tailoring and expert stitching services crafted for elegance.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="./pages/services.html">Our Services</a>
+                        <a href="./pages/blog.html">Blog</a>
+                        <a href="./pages/gallery.html">Gallery</a>
+                        <a href="./pages/about.html">About Us</a>
+                        <a href="./pages/contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <div class="footer-links">
+                        <a href="./pages/faq.html">FAQ</a>
+                        <a href="./pages/privacy-policy.html">Privacy Policy</a>
+                        <a href="./pages/terms-and-conditions.html">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StitchCraft Tailoring Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="./js/theme.js"></script>
+    <script src="./js/rtl.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+
+
