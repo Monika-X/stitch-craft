@@ -1815,9 +1815,10 @@
 /* ---- FILTER TABS ---- */
 .gal-tabs {
     display: flex;
+    justify-content: center;
     gap: 0.5rem;
     flex-wrap: wrap;
-    padding: 3rem 5%;
+    padding: 5rem 5% 1rem;
 }
 .gal-tab {
     padding: 0.65rem 1.8rem;
