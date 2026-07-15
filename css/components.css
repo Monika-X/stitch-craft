@@ -685,35 +685,56 @@
     letter-spacing: 3px;
 }
 
-/* Appointment CTA - Immersive Dark Focus */
+/* Appointment CTA - Immersive Dark Focus (Premium Restyle) */
 .appointment-cta {
-    background-color: #0A0A0A;
-    padding: 10rem 0;
+    background-color: #050505;
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 12rem 0;
     text-align: center;
+    position: relative;
+    border-top: 1px solid rgba(212, 175, 55, 0.15);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
 }
 .appointment-cta h2 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
+    font-size: 3.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-accent);
     font-family: var(--font-heading);
-    font-weight: 400;
+    font-weight: 300;
+    letter-spacing: -0.02em;
 }
 .appointment-cta p {
-    font-size: 1.15rem;
-    margin-bottom: 5rem;
-    color: #888888;
+    font-size: 1.25rem;
+    margin-bottom: 4rem;
+    color: rgba(255,255,255,0.8);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
 }
 .inline-cta-form {
     display: flex;
-    max-width: 650px;
+    max-width: 700px;
     margin: 0 auto;
-    gap: 0;
-    border-bottom: 1px solid #333;
-    padding-bottom: 0.5rem;
+    gap: 1rem;
+    background: rgba(255,255,255,0.03);
+    padding: 0.8rem;
+    border-radius: 50px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+.inline-cta-form:focus-within {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
 }
 .inline-cta-form input {
     flex: 1;
-    padding: 1rem 0;
+    padding: 1rem 1.5rem;
     border: none;
     font-size: 1.1rem;
     font-family: var(--font-body);
@@ -722,21 +743,24 @@
     outline: none;
 }
 .inline-cta-form input::placeholder {
-    color: #666;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 1px;
 }
 .inline-cta-form .btn-light {
-    background: transparent;
-    color: var(--color-accent);
+    background: var(--color-accent);
+    color: #000;
     border: none;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
+    border-radius: 40px;
     font-weight: 500;
-    text-transform: uppercase;
     letter-spacing: 2px;
-    cursor: pointer;
-    transition: color 0.3s ease;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 .inline-cta-form .btn-light:hover {
-    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.25);
+    background: #e6c86a;
 }
 
 /* Data Theme Overrides for Luxury Dark Mode */
