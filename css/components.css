@@ -1759,7 +1759,7 @@
     position: relative;
     min-height: 80vh;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding-top: var(--nav-height, 80px);
     overflow: hidden;
 }
