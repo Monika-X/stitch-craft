@@ -495,7 +495,83 @@ section {
 }
 
 
-/* 6. Newsletter / CTA Form */
+/* 6. Customer Testimonials */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.testimonial-card {
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  padding: 3.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-accent);
+  box-shadow: 0 20px 40px var(--color-shadow);
+}
+
+.quote-icon {
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+  opacity: 0.7;
+}
+
+.testimonial-text {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text-primary);
+  margin-bottom: 2.5rem;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.client-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--color-accent);
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.testimonial-card:hover .client-img {
+  filter: grayscale(0%);
+}
+
+.client-details h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
+  margin: 0 0 0.15rem 0;
+  font-weight: 500;
+}
+
+.client-details p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* 7. Newsletter / CTA Form */
 .cta {
   background-color: var(--color-accent);
   color: #000;
@@ -561,7 +637,7 @@ section {
     .hero p {
         max-width: 600px;
     }
-    .features-grid, .services-grid, .fabrics-grid, .process-steps {
+    .features-grid, .services-grid, .fabrics-grid, .testimonials-grid {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
@@ -570,10 +646,6 @@ section {
     }
     .fabric-item:nth-child(2) {
         margin-top: 0;
-    }
-    .process-steps {
-        flex-direction: column;
-        align-items: center;
     }
 }
 
