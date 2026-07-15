@@ -2080,8 +2080,8 @@
     justify-content: center;
     gap: 0.5rem;
     flex-wrap: wrap;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin-top: 6rem !important;
+    margin-bottom: 3rem !important;
     padding: 0 5%;
 }
 
