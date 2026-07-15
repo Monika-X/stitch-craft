@@ -71,11 +71,115 @@ section {
   z-index: -1;
 }
 
+/* =====================
+   HERO SMOKE EFFECT
+   ===================== */
+.hero-smoke {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.smoke-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* Blob 1 — bottom-left drift */
+.smoke-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(20,20,20,0.9) 0%, rgba(0,0,0,0) 70%);
+  bottom: -150px;
+  left: -100px;
+  animation: smoke-drift-1 14s ease-in-out infinite;
+}
+
+/* Blob 2 — bottom-center rise */
+.smoke-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(15,15,15,0.85) 0%, rgba(0,0,0,0) 70%);
+  bottom: -80px;
+  left: 30%;
+  animation: smoke-drift-2 18s ease-in-out infinite 3s;
+}
+
+/* Blob 3 — right side */
+.smoke-3 {
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(10,10,10,0.8) 0%, rgba(0,0,0,0) 70%);
+  bottom: -200px;
+  right: -150px;
+  animation: smoke-drift-1 20s ease-in-out infinite 6s;
+}
+
+/* Blob 4 — mid-left subtle */
+.smoke-4 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(30,30,30,0.7) 0%, rgba(0,0,0,0) 70%);
+  top: 30%;
+  left: 10%;
+  animation: smoke-drift-3 22s ease-in-out infinite 2s;
+}
+
+/* Blob 5 — top-right subtle haze */
+.smoke-5 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(15,15,15,0.6) 0%, rgba(0,0,0,0) 70%);
+  top: 10%;
+  right: 15%;
+  animation: smoke-drift-2 25s ease-in-out infinite 8s;
+}
+
+/* Blob 6 — center large base */
+.smoke-6 {
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(5,5,5,0.5) 0%, rgba(0,0,0,0) 70%);
+  bottom: -300px;
+  left: 20%;
+  animation: smoke-drift-3 30s ease-in-out infinite 1s;
+}
+
+@keyframes smoke-drift-1 {
+  0%   { opacity: 0; transform: translateY(0) translateX(0) scale(1); }
+  20%  { opacity: 0.8; }
+  50%  { opacity: 0.6; transform: translateY(-120px) translateX(30px) scale(1.15); }
+  80%  { opacity: 0.4; }
+  100% { opacity: 0; transform: translateY(-250px) translateX(60px) scale(1.3); }
+}
+
+@keyframes smoke-drift-2 {
+  0%   { opacity: 0; transform: translateY(0) translateX(0) scale(1) rotate(0deg); }
+  15%  { opacity: 0.7; }
+  50%  { opacity: 0.5; transform: translateY(-100px) translateX(-40px) scale(1.2) rotate(8deg); }
+  85%  { opacity: 0.3; }
+  100% { opacity: 0; transform: translateY(-230px) translateX(-80px) scale(1.4) rotate(15deg); }
+}
+
+@keyframes smoke-drift-3 {
+  0%   { opacity: 0; transform: translateY(0) scale(0.9); }
+  25%  { opacity: 0.6; }
+  50%  { opacity: 0.4; transform: translateY(-80px) scale(1.1); }
+  75%  { opacity: 0.25; }
+  100% { opacity: 0; transform: translateY(-180px) scale(1.25); }
+}
+
+
 .hero-content {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 90px; /* Offset for the navbar overlap so true visual center is maintained */
+  padding-top: 90px;
   padding-bottom: 0;
   display: flex;
   flex-direction: column;
@@ -83,6 +187,8 @@ section {
   align-items: center;
   text-align: center;
   gap: 2.5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
