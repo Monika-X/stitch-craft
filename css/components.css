@@ -547,7 +547,7 @@
 .step-list::before {
     content: '';
     position: absolute;
-    top: 40px;
+    top: calc(40px + 2.5rem);
     left: 5%; right: 5%;
     height: 1px;
     background: var(--color-accent);
@@ -560,6 +560,15 @@
     text-align: center;
     position: relative;
     z-index: 2;
+    padding: 2.5rem;
+    border-radius: 8px;
+    background: transparent;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.step-item:hover {
+    transform: translateY(-12px) scale(1.02);
+    background: var(--card-bg);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
 }
 .step-icon {
     width: 80px;
@@ -572,15 +581,22 @@
     justify-content: center;
     color: var(--color-accent);
     margin-bottom: 2rem;
-    transition: all 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.step-icon:hover {
+.step-item:hover .step-icon {
     background: var(--color-accent);
     color: var(--bg-color);
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+    border-color: transparent;
 }
 .step-icon svg {
     width: 24px;
     height: 24px;
+    transition: transform 0.5s ease;
+}
+.step-item:hover .step-icon svg {
+    transform: scale(1.15);
 }
 .step-content h4 {
     font-size: 1.5rem;
