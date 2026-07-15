@@ -223,72 +223,174 @@
     border-bottom: 1px solid var(--color-border);
 }
 
-/* === Footer === */
+/* === Premium Footer === */
 .footer {
-    background-color: var(--color-footer-bg);
-    color: var(--color-footer-text);
-    padding: var(--space-lg) 0 var(--space-md);
+    background-color: #080808;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 6rem 0 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, transparent 100%);
 }
 
 .footer-top {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-lg);
-    margin-bottom: var(--space-lg);
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+
+.footer-col.brand-col .nav-brand {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.footer-desc {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 380px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--color-accent);
+    color: #000;
+    border-color: var(--color-accent);
+    transform: translateY(-3px);
 }
 
 .footer-col h3 {
     color: #fff;
     font-family: var(--font-heading);
-    font-size: 1.3rem;
-    margin-bottom: var(--space-md);
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.footer-col h3::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 40px;
-    height: 2px;
-    background-color: var(--color-accent);
-}
-
-[dir="rtl"] .footer-col h3::after {
-    left: auto;
-    right: 0;
-}
-
-.footer-col p {
-    color: #aaa;
-    margin-bottom: var(--space-sm);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
 }
 
 .footer-links {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 1rem;
 }
 
 .footer-links a {
-    color: #aaa;
-    transition: color var(--transition-fast);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    position: relative;
+    width: fit-content;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
 }
 
 .footer-links a:hover {
     color: var(--color-accent);
 }
 
-.footer-bottom {
-    text-align: center;
-    padding-top: var(--space-md);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #888;
-    font-size: 0.9rem;
+.footer-links a:hover::after {
+    width: 100%;
 }
 
+.newsletter-col p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.newsletter-form input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    flex: 1;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.newsletter-form button {
+    background: transparent;
+    border: none;
+    color: var(--color-accent);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    transform: translateX(4px);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #fff;
+}
 /* Back to Top */
 .back-to-top {
     position: fixed;
