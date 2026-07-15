@@ -699,13 +699,18 @@ section:first-of-type .section-header {
 
 /* Ensure reveal elements don't cause horizontal overflow */
 .reveal,
-.reveal-up,
-.reveal-left,
-.reveal-right {
-    overflow: hidden; /* prevent horizontal bleed from transform */
+.reveal-up {
+    overflow: hidden; /* prevent vertical bleed from transform */
 }
 
-/* However, grids and flex containers should not clip children */
+/* reveal-left and reveal-right must NOT clip — their translate transform
+   would otherwise hide content that extends to the edge of the container */
+.reveal-left,
+.reveal-right {
+    overflow: visible;
+}
+
+/* Grids and flex containers should not clip children */
 .features-grid.reveal,
 .services-grid.reveal,
 .tailors-grid.reveal,
@@ -731,3 +736,21 @@ section:first-of-type .section-header {
     transform: translateY(-4px);
 }
 
+
+/* ============================================================
+   19. HOME 2 HERO — FIX TEXT SIZE & OVERFLOW
+   ============================================================ */
+
+/* Reduce oversized h1 so it fits within the 1fr split-screen column */
+.hero-split-content h1 {
+    font-size: clamp(2.4rem, 3.8vw, 4rem) !important;
+    line-height: 1.05 !important;
+    white-space: normal;
+    overflow: visible;
+    word-break: normal;
+}
+
+/* The content pane must never clip its children */
+.hero-split-content {
+    overflow: visible !important;
+}
