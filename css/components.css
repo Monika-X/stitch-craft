@@ -1356,24 +1356,33 @@
 .svc-alt-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2px;
+    gap: 2.5rem;
 }
 .svc-alt-card {
-    background: #181818;
-    padding: 4rem 3rem;
-    border-top: 2px solid transparent;
-    transition: border-color 0.4s ease, background 0.4s ease;
+    background: #151515;
+    padding: 4rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.5s ease, border-color 0.5s ease, background-color 0.5s ease;
+    position: relative;
 }
 .svc-alt-card:hover,
 .svc-alt-card.featured {
-    border-top-color: var(--color-accent);
-    background: #1e1e1e;
+    transform: translateY(-10px);
+    border-color: rgba(212, 175, 55, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    background: #1a1a1a;
 }
 .alt-icon {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--color-accent);
     margin-bottom: 1.5rem;
     display: block;
+    transition: transform 0.5s ease, text-shadow 0.5s ease;
+}
+.svc-alt-card:hover .alt-icon {
+    transform: scale(1.15) rotate(10deg);
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
 }
 .svc-alt-card h3 {
     font-family: var(--font-heading);
