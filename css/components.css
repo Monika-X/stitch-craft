@@ -455,7 +455,6 @@
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    border-left: 3px solid var(--color-accent);
 }
 .journey-image img {
     width: 100%;
@@ -2597,9 +2596,11 @@
 .journey-block.reverse .journey-text {
     text-align: right;
     padding-right: 4rem;
+    border-right: 3px solid var(--color-accent);
 }
 .journey-block:not(.reverse) .journey-text {
     padding-left: 4rem;
+    border-left: 3px solid var(--color-accent);
 }
 
 /* Masonry - Cinematic Hover */
