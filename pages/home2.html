@@ -236,10 +236,14 @@
             <div class="container cta-inner">
                 <h2>Ready for Perfection?</h2>
                 <p>Reserve your private appointment with our master tailors. Step into our world of bespoke craftsmanship, where every detail is meticulously shaped to complement your unique lifestyle. Experience an unparalleled styling consultation over whiskey or espresso, and begin the journey toward an extraordinary wardrobe that truly defines your legacy.</p>
-                <form class="inline-cta-form">
+                <form id="cta-booking-form" class="inline-cta-form">
                     <input type="email" placeholder="Enter your email address" required>
                     <button type="submit" class="btn btn-light">Request Booking</button>
                 </form>
+                <div id="cta-success-msg" class="cta-success-msg" style="display: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Thank you! We will contact you shortly to confirm your appointment.</span>
+                </div>
             </div>
         </section>
     </main>

@@ -762,6 +762,21 @@
     box-shadow: 0 10px 20px rgba(212, 175, 55, 0.25);
     background: #e6c86a;
 }
+.cta-success-msg {
+    margin-top: 1.5rem;
+    color: var(--color-accent);
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.cta-success-msg.show {
+    opacity: 1;
+}
 
 /* Data Theme Overrides for Luxury Dark Mode */
 [data-theme="dark"] .hero-split, [data-theme="dark"] .measurement-steps, [data-theme="dark"] .delivery-timeline {
