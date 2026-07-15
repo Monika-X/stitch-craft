@@ -135,7 +135,7 @@ section {
   padding: 3rem;
   background: var(--color-bg-primary);
   border: 1px solid rgba(0,0,0,0.05);
-  transition: all 0.5s ease;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), background-color 0.6s ease, border-color 0.6s ease, box-shadow 0.6s ease;
   overflow: hidden;
 }
 
@@ -159,7 +159,7 @@ section {
     opacity: 0.03;
     line-height: 1;
     z-index: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease, transform 0.6s ease;
 }
 
 .features-grid {
@@ -169,10 +169,23 @@ section {
 .feature-card:hover {
     background: var(--color-bg-secondary);
     border-color: var(--color-accent);
+    box-shadow: 0 20px 50px var(--color-shadow);
+    z-index: 5;
+}
+
+.feature-card:nth-child(1):hover {
+    transform: scale(1.04);
+}
+.feature-card:nth-child(2):hover {
+    transform: translateY(4rem) scale(1.04);
+}
+.feature-card:nth-child(3):hover {
+    transform: translateY(8rem) scale(1.04);
 }
 
 .feature-card:hover::before {
     opacity: 0.08;
+    transform: scale(1.05) translate(-10px, 10px);
 }
 
 .feature-icon {
