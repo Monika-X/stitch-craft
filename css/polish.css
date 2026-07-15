@@ -766,3 +766,22 @@ section:first-of-type .section-header {
 .fabric-header .section-title {
     margin-bottom: 1.5rem !important;
 }
+
+/* ============================================================
+   21. MASTER CRAFTSMEN — IMAGES
+   ============================================================ */
+
+/* Ensure portrait images fill the placeholder space */
+.expert-img-placeholder {
+    overflow: hidden;
+}
+.expert-img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease;
+}
+.expert-card:hover .expert-img-placeholder img {
+    transform: scale(1.05);
+}
