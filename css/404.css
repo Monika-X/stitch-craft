@@ -243,8 +243,16 @@ body.error-body {
 }
 
 @media (max-width: 480px) {
+    .error-image {
+        min-height: 25vh;
+    }
+    
     .error-content {
         padding: 30px 20px;
+    }
+    
+    .error-brand {
+        margin-bottom: 25px;
     }
     
     .error-code {
