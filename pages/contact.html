@@ -59,128 +59,96 @@
             </div>
         </section>
 
-        <!-- 2. Contact Information -->
-        <section class="contact-info section-padding">
+        <!-- 2. Main Contact Area -->
+        <section class="contact-main section-padding">
             <div class="container">
-                <div class="section-title text-center">
-                    <h2>Contact Information</h2>
-                    <p>Reach out to us through any of the following channels.</p>
-                </div>
-                <div class="contact-info-grid">
-                    <div class="contact-card">
-                        <div class="icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <div class="contact-layout-grid">
+                    
+                    <!-- Left Column: The Inquiry Form -->
+                    <div class="contact-form-column reveal">
+                        <div class="section-title text-left" style="text-align: left;">
+                            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Private Appointments</h2>
+                            <p style="font-size: 1.1rem; line-height: 1.6;">StitchCraft operates on a bespoke, appointment-only basis to ensure every client receives our undivided attention. Please submit your inquiry below to schedule a fitting or consultation.</p>
                         </div>
-                        <h3>Phone</h3>
-                        <a href="tel:+1234567890">+1 (234) 567-890</a>
-                    </div>
-                    <div class="contact-card">
-                        <div class="icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <div class="form-wrapper" style="margin: 2rem 0 0 0;">
+                            <form id="contactForm" class="contact-form" novalidate>
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="e.g. John Doe">
+                                    <span class="error-msg" id="nameError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required placeholder="e.g. john@example.com">
+                                    <span class="error-msg" id="emailError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Nature of Inquiry</label>
+                                    <select id="subject" name="subject" required class="form-select">
+                                        <option value="" disabled selected>Select an option...</option>
+                                        <option value="bespoke">Bespoke Suit Consultation</option>
+                                        <option value="wedding">Wedding / Groomswear</option>
+                                        <option value="alteration">Luxury Alterations</option>
+                                        <option value="general">General Inquiry</option>
+                                    </select>
+                                    <span class="error-msg" id="subjectError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your sartorial needs..."></textarea>
+                                    <span class="error-msg" id="messageError"></span>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                            </form>
+                            <div id="formSuccess" class="form-success hidden">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <h3>Thank You!</h3>
+                                <p>Your inquiry has been received. Our concierge will contact you within 24 hours.</p>
+                            </div>
                         </div>
-                        <h3>Email</h3>
-                        <a href="mailto:hello@stitchcraft.com">hello@stitchcraft.com</a>
                     </div>
-                    <div class="contact-card">
-                        <div class="icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        </div>
-                        <h3>Location</h3>
-                        <p>123 Fashion Ave, NY 10001</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- 3. Contact Form -->
-        <section class="contact-form-section section-padding bg-secondary">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>Send Us a Message</h2>
-                    <p>Fill out the form below and we will get back to you shortly.</p>
-                </div>
-                <div class="form-wrapper">
-                    <form id="contactForm" class="contact-form" novalidate>
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required placeholder="John Doe">
-                            <span class="error-msg" id="nameError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required placeholder="john@example.com">
-                            <span class="error-msg" id="emailError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required placeholder="How can we help?">
-                            <span class="error-msg" id="subjectError"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
-                            <span class="error-msg" id="messageError"></span>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                    <div id="formSuccess" class="form-success hidden">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        <h3>Thank You!</h3>
-                        <p>Your message has been sent successfully.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <!-- Right Column: The Atelier Details & Map -->
+                    <div class="contact-details-column reveal" style="animation-delay: 0.2s;">
+                        <div class="atelier-info-box">
+                            <h2>The Atelier</h2>
+                            
+                            <div class="info-block">
+                                <h3>Location</h3>
+                                <p>123 Savile Row<br>Mayfair, London<br>W1S 3PR</p>
+                            </div>
 
-        <!-- 4. Embedded Google Map -->
-        <section class="contact-map">
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+                            <div class="info-block">
+                                <h3>Direct Contact</h3>
+                                <p><a href="tel:+442071234567">+44 (0) 20 7123 4567</a><br>
+                                <a href="mailto:concierge@stitchcraft.com">concierge@stitchcraft.com</a></p>
+                            </div>
 
-        <!-- 5. Business Hours -->
-        <section class="business-hours section-padding">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>Business Hours</h2>
-                    <p>Visit our studio during these hours</p>
-                </div>
-                <div class="hours-grid">
-                    <div class="hours-row">
-                        <span class="day">Monday - Friday</span>
-                        <span class="time">9:00 AM - 6:00 PM</span>
-                    </div>
-                    <div class="hours-row">
-                        <span class="day">Saturday</span>
-                        <span class="time">10:00 AM - 4:00 PM</span>
-                    </div>
-                    <div class="hours-row">
-                        <span class="day">Sunday</span>
-                        <span class="time">Closed</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+                            <div class="info-block">
+                                <h3>Atelier Hours</h3>
+                                <div class="hours-row" style="padding: 0.2rem 0; border: none; font-size: 1rem;"><span class="day">Monday - Friday</span><span class="time">9:00 AM - 6:00 PM</span></div>
+                                <div class="hours-row" style="padding: 0.2rem 0; border: none; font-size: 1rem;"><span class="day">Saturday</span><span class="time">10:00 AM - 4:00 PM (By Appt)</span></div>
+                                <div class="hours-row" style="padding: 0.2rem 0; border: none; font-size: 1rem;"><span class="day">Sunday</span><span class="time">Closed</span></div>
+                            </div>
+                            
+                            <div class="social-links-large" style="justify-content: flex-start; margin-top: 2rem;">
+                                <a href="https://instagram.com/stitchcraft" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                </a>
+                                <a href="https://facebook.com/stitchcraft" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                </a>
+                                <a href="https://pinterest.com/stitchcraft" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Pinterest">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="12" x2="12" y2="22"></line><path d="M12 12c-2-2-4-4-4-4s-2-2-2-2a4 4 0 0 1 4-4c2 2 4 4 4 4s2 2 2 2"></path><path d="M12 12c2-2 4-4 4-4s2-2 2-2a4 4 0 0 0-4-4c-2 2-4 4-4 4s-2 2-2 2"></path></svg>
+                                </a>
+                            </div>
+                        </div>
 
-        <!-- 6. Social Media -->
-        <section class="social-media-section section-padding bg-secondary text-center">
-            <div class="container">
-                <h2>Follow Us</h2>
-                <p>Stay connected with us on social media for the latest updates.</p>
-                <div class="social-links-large">
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                    </a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                    </a>
-                    <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Pinterest">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="12" x2="12" y2="22"></line><path d="M12 12c-2-2-4-4-4-4s-2-2-2-2a4 4 0 0 1 4-4c2 2 4 4 4 4s2 2 2 2"></path><path d="M12 12c2-2 4-4 4-4s2-2 2-2a4 4 0 0 0-4-4c-2 2-4 4-4 4s-2 2-2 2"></path></svg>
-                    </a>
+                        <!-- Embedded Google Map -->
+                        <div class="map-container-premium">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d2483.003923588235!2d-0.14247502324976454!3d51.51314981028713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d509f6e695%3A0x8979c59501a30366!2sSavile%20Row%2C%20London%2C%20UK!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -201,9 +169,9 @@
                     <a href="../index.html" class="nav-brand">Stitch<span>Craft</span></a>
                     <p class="footer-desc">Where heritage tailoring meets contemporary design. We craft bespoke garments that transcend generations, built on uncompromising quality and peerless artistry.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-                        <a href="#" aria-label="Pinterest"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="22" x2="12" y2="10"></line><path d="M12 10a4 4 0 1 0-8 0c0 4 8 12 8 12z"></path><path d="M12 10a4 4 0 1 1 8 0c0 4-8 12-8 12z"></path></svg></a>
-                        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                        <a href="https://instagram.com/stitchcraft" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="https://pinterest.com/stitchcraft" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="22" x2="12" y2="10"></line><path d="M12 10a4 4 0 1 0-8 0c0 4 8 12 8 12z"></path><path d="M12 10a4 4 0 1 1 8 0c0 4-8 12-8 12z"></path></svg></a>
+                        <a href="https://twitter.com/stitchcraft" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
                     </div>
                 </div>
                 <div class="footer-col links-col">
