@@ -2784,7 +2784,8 @@
 .featured-img-wrapper {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 16/10;
+    height: 100%;
+    min-height: 100%;
 }
 
 .featured-img-wrapper img {
