@@ -789,3 +789,23 @@ section:first-of-type .section-header {
 .expert-card:hover .expert-img-placeholder img {
     transform: scale(1.05);
 }
+/* ============================================================
+   22. MOJIBAKE FIX FOR RTL (ENGLISH TEXT)
+   ============================================================ */
+
+/* Forces trailing punctuation (like periods) to stay on the correct side 
+   when displaying English text in RTL layout by appending an invisible 
+   Left-To-Right Mark (LRM). h3 is omitted to preserve footer underlines. */
+[dir="rtl"] p::after,
+[dir="rtl"] h1::after,
+[dir="rtl"] h2::after,
+[dir="rtl"] h4::after,
+[dir="rtl"] h5::after,
+[dir="rtl"] h6::after,
+[dir="rtl"] li::after,
+[dir="rtl"] .section-subtitle::after,
+[dir="rtl"] .btn::after,
+[dir="rtl"] .pricing-price::after,
+[dir="rtl"] .pricing-tier::after {
+    content: "\200E";
+}
