@@ -506,7 +506,7 @@ section:first-of-type .section-header {
 
 /* Contact hero — fix margin-top to use nav-height variable */
 .page-hero {
-    margin-top: var(--nav-height, 90px);
+    padding-top: var(--nav-height, 90px);
     height: 50vh;
     min-height: 400px;
 }
