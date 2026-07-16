@@ -626,6 +626,10 @@
     }
 
     /* --- SECTION PADDING --- */
+    .process::before {
+        display: none;
+    }
+
     .section-padding,
     .svc-detail,
     .svc-alterations,
