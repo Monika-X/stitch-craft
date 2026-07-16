@@ -26,6 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
         let count = 0;
         let totalVisibleInCategory = 0;
 
+        const featuredSection = document.querySelector('.blog-featured');
+        const picksSection = document.querySelector('.blog-picks');
+
+        if (currentCategory === 'all') {
+            if (featuredSection) featuredSection.style.display = '';
+            if (picksSection) picksSection.style.display = '';
+        } else {
+            if (featuredSection) featuredSection.style.display = 'none';
+            if (picksSection) picksSection.style.display = 'none';
+        }
+
         blogItems.forEach(item => {
             const itemCategory = item.getAttribute('data-category');
             
