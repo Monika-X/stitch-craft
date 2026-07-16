@@ -138,7 +138,7 @@
 
 .form-group {
     margin-bottom: var(--space-md);
-    text-align: left;
+    text-align: start;
 }
 
 .form-group label {
@@ -444,6 +444,7 @@
     box-shadow: 0 15px 35px var(--color-shadow);
     border: 1px solid var(--color-border);
     margin-bottom: 2rem;
+    text-align: start;
 }
 
 .atelier-info-box h2 {

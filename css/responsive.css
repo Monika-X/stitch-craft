@@ -255,9 +255,15 @@
     }
     
     /* Hero Description */
+    .page-hero {
+        height: auto !important;
+        min-height: 0 !important;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
     .page-hero-desc {
-        font-size: 0.9rem;
-        line-height: 1.5;
+        font-size: 0.8rem !important;
+        line-height: 1.4 !important;
         padding: 0 10px;
     }
 
