@@ -85,6 +85,15 @@
   .nav-controls {
     gap: 5px;
   }
+  
+  .dropdown-menu {
+    right: -50px;
+  }
+  
+  [dir="rtl"] .dropdown-menu {
+    left: -50px;
+    right: auto;
+  }
 }
 
 
