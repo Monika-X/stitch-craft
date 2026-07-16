@@ -73,12 +73,10 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('active');
             
             // Get category
-            const text = link.textContent.trim().toLowerCase();
-            if (text === 'all stories') currentCategory = 'all';
-            else if (text === 'tailoring guide') currentCategory = 'tailoring-guide';
-            else if (text === 'latest trends') currentCategory = 'latest-trends';
-            else if (text === 'wedding') currentCategory = 'wedding';
-            else if (text === 'inside the atelier') currentCategory = 'inside-the-atelier';
+            const filter = link.getAttribute('data-filter');
+            if (filter) {
+                currentCategory = filter;
+            }
             
             // Reset pagination on category change
             visibleCount = 9;
