@@ -315,6 +315,39 @@
     text-align: right;
 }
 
+/* ---- Premium Article Navigation ---- */
+.article-nav-premium {
+    text-align: center;
+    padding: 6rem 2rem;
+    border-top: 1px solid var(--color-border);
+    margin-top: 5rem;
+    background: linear-gradient(180deg, transparent 0%, rgba(255,255,255,0.015) 100%);
+    transition: background 0.4s ease;
+}
+
+.article-nav-premium:hover {
+    background: linear-gradient(180deg, transparent 0%, rgba(255,255,255,0.03) 100%);
+}
+
+.article-nav-premium .nav-label {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+}
+
+.article-nav-premium .nav-title-link {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.4s ease;
+    display: inline-block;
+}
+
+.article-nav-premium .nav-title-link:hover {
+    color: var(--color-accent);
+}
+
 /* ---- Newsletter Section ---- */
 .blog-newsletter {
     padding: 8rem 0;
