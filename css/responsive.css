@@ -422,6 +422,12 @@
 @media (max-width: 480px) {
     .gal-row-4 { grid-template-columns: 1fr; }
     .gal-trad-grid { grid-template-columns: 1fr; }
+    .gal-trad-grid .gal-item.tall,
+    .gal-trad-grid .gal-item.wide {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .gal-trad-grid .gal-item { height: 300px; }
     .gal-insta-grid { grid-template-columns: 1fr; }
     .gal-section { padding: 1.5rem 0 4rem 0; }
     .gal-section-header { margin-bottom: 2rem; }
