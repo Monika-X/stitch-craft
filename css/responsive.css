@@ -86,13 +86,23 @@
     gap: 5px;
   }
   
+  .nav-controls > * {
+    flex-shrink: 0;
+  }
+  
   .dropdown-menu {
-    right: -50px;
+    right: auto !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(10px) !important;
+  }
+  
+  .user-dropdown.active .dropdown-menu {
+    transform: translateX(-50%) translateY(0) !important;
   }
   
   [dir="rtl"] .dropdown-menu {
-    left: -50px;
-    right: auto;
+    right: auto !important;
+    left: 50% !important;
   }
 }
 
