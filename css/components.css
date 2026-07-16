@@ -3290,14 +3290,14 @@
     overflow: hidden;
 }
 
-.hero-split-content {
+.hero-split .hero-split-content {
     padding: 8rem 0 8rem max(1rem, calc((100% - 1200px) / 2));
     position: relative;
     z-index: 3;
     background: transparent;
 }
 
-.hero-split-content h1 {
+.hero-split .hero-split-content h1 {
     font-size: clamp(4rem, 7vw, 6.5rem);
     letter-spacing: -2px;
     width: 140%;
@@ -3307,7 +3307,7 @@
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-[data-theme="dark"] .hero-split-content h1 {
+[data-theme="dark"] .hero-split .hero-split-content h1 {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -3321,7 +3321,7 @@
 }
 
 @media (max-width: 1024px) {
-    .hero-split-content h1 {
+    .hero-split .hero-split-content h1 {
         width: 100%;
     }
 
