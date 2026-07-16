@@ -456,3 +456,278 @@
     .article-hero-standard { padding-top: 100px; }
     .article-share { flex-wrap: wrap; }
 }
+
+/* =========================================
+   STRICT 320px MINIMUM VIEWPORT SUPPORT
+   ========================================= */
+
+@media (max-width: 360px) {
+
+    /* --- GLOBAL --- */
+    html { font-size: 14px; }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    /* --- NAVBAR --- */
+    .navbar .container {
+        padding: 0 10px;
+    }
+
+    .nav-brand {
+        font-size: 1.25rem;
+    }
+
+    .nav-controls {
+        gap: 2px;
+    }
+
+    .icon-btn {
+        padding: 4px;
+    }
+
+    .icon-btn svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* Hide RTL label text on tiny screens, show only icon */
+    #rtl-toggle {
+        font-size: 0.6rem;
+        padding: 4px 5px;
+    }
+
+    /* --- HERO SECTIONS --- */
+    h1 { font-size: clamp(1.8rem, 8vw, 2.4rem) !important; }
+    h2 { font-size: clamp(1.4rem, 6vw, 1.8rem) !important; }
+    h3 { font-size: clamp(1.1rem, 5vw, 1.4rem) !important; }
+
+    .hero-content h1,
+    .gal-hero-title,
+    .svc-hero-title,
+    .about-hero-content .section-title {
+        font-size: clamp(2rem, 9vw, 2.8rem) !important;
+    }
+
+    .section-subtitle {
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    /* --- HOME SPLIT HERO --- */
+    .hero-split-content {
+        padding: 3rem 4% 2rem;
+    }
+
+    .hero-split-content h1 {
+        font-size: clamp(1.8rem, 8vw, 2.4rem) !important;
+    }
+
+    /* --- SERVICES HERO --- */
+    .svc-hero-content {
+        padding: 1.5rem 4%;
+    }
+
+    .svc-hero-title {
+        font-size: clamp(2rem, 8vw, 2.8rem) !important;
+    }
+
+    /* --- BUTTONS --- */
+    .btn, .btn-primary, .btn-outline, .btn-luxury {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    .error-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* --- SECTION PADDING --- */
+    .section-padding,
+    .svc-detail,
+    .svc-alterations,
+    .svc-fabric,
+    .svc-pricing,
+    .svc-cta {
+        padding: 3rem 0;
+    }
+
+    /* --- PRICING CARDS --- */
+    .pricing-grid {
+        padding: 0 4%;
+    }
+
+    .pricing-card {
+        padding: 2rem 1.2rem;
+    }
+
+    .pricing-price {
+        font-size: 3rem !important;
+    }
+
+    /* --- FOOTER --- */
+    .footer {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .footer-top {
+        gap: 2rem;
+    }
+
+    .footer-col {
+        padding: 0 4px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+        font-size: 0.78rem;
+    }
+
+    .footer-bottom-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        font-size: 0.85rem;
+    }
+
+    /* --- GALLERY --- */
+    .gal-masonry .gal-item,
+    .gal-wedding-grid .gal-item,
+    .gal-workshop-grid .gal-item {
+        height: 220px;
+    }
+
+    .gal-insta-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .gal-tabs {
+        gap: 0.4rem;
+        flex-wrap: wrap;
+    }
+
+    .gal-tab {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* --- BLOG --- */
+    .blog-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .blog-categories-list {
+        gap: 0.5rem;
+    }
+
+    /* --- BLOG DETAIL --- */
+    .drop-cap::first-letter {
+        font-size: 3rem;
+    }
+
+    .article-hero-standard {
+        min-height: 40vh;
+        padding-top: 80px;
+    }
+
+    /* --- BACK TO TOP --- */
+    .back-to-top {
+        width: 38px;
+        height: 38px;
+        bottom: 20px;
+        right: 16px;
+    }
+
+    [dir="rtl"] .back-to-top {
+        right: auto;
+        left: 16px;
+    }
+
+    /* --- CONTACT & FORMS --- */
+    .contact-layout-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        font-size: 0.9rem;
+        padding: 0.7rem 0.9rem;
+    }
+
+    /* --- ABOUT PAGE --- */
+    .achievements-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .achieve-number {
+        font-size: 2.5rem !important;
+    }
+
+    /* --- LIGHTBOX --- */
+    .lb-nav {
+        width: 36px;
+        height: 36px;
+        font-size: 1.5rem;
+    }
+
+    .lb-prev { left: 0.3rem; }
+    .lb-next { right: 0.3rem; }
+    .lb-close { top: 0.5rem; right: 0.5rem; }
+
+    /* --- FAQ --- */
+    .faq-question {
+        font-size: 0.95rem;
+        padding-right: 2rem;
+    }
+
+    [dir="rtl"] .faq-question {
+        padding-left: 2rem;
+        padding-right: 0;
+    }
+
+    /* --- 404 PAGE --- */
+    .error-content {
+        padding: 30px 16px;
+    }
+
+    .error-code {
+        font-size: 5rem;
+    }
+
+    .error-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .error-actions {
+        width: 100%;
+    }
+
+    /* --- PREVENT HORIZONTAL OVERFLOW --- */
+    body, main, section, .container, .footer {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

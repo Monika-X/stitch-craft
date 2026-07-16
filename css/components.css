@@ -133,14 +133,19 @@
     background: transparent;
     border: none;
     color: var(--color-text-primary);
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
-    padding: 8px;
+    padding: 6px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.icon-btn svg {
+    width: 16px;
+    height: 16px;
 }
 
 .icon-btn:hover {
