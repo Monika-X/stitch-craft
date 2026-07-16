@@ -447,7 +447,7 @@
     padding-right: max(2rem, calc((100vw - 900px) / 4));
 }
 
-.editorial-body[data-layout="b"] .pull-quote {
+.editorial-body[data-layout="b"] .pull-quote:not(.right) {
     text-align: left;
     padding-left: 2.5rem;
     border-left: 2px solid var(--color-accent);
@@ -457,7 +457,7 @@
     font-size: clamp(1.4rem, 2.5vw, 1.8rem);
 }
 
-.editorial-body[data-layout="b"] .pull-quote::before {
+.editorial-body[data-layout="b"] .pull-quote:not(.right)::before {
     left: 0.5rem;
 }
 
