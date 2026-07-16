@@ -166,6 +166,11 @@ p {
     color: var(--color-text-primary);
 }
 
+/* Ensure footer paragraphs inherit the light footer color */
+.footer p {
+    color: inherit;
+}
+
 /* Remove any inconsistent margin-bottom:0 on last paragraphs in cards */
 .feature-card p:last-child,
 .service-card p:last-child,
