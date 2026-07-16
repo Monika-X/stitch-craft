@@ -55,7 +55,7 @@ $newFooter = @"
 
 $rootNewFooter = $newFooter -replace 'href="', 'href="pages/' -replace 'pages/\.\./', '' -replace 'pages/#', '#'
 
-function Process-File {
+function Invoke-FooterUpdate {
     param([string]$FilePath, [bool]$IsRoot)
     
     $content = [System.IO.File]::ReadAllText($FilePath)
@@ -72,12 +72,12 @@ function Process-File {
 }
 
 if (Test-Path "index.html") {
-    Process-File "index.html" $true
+    Invoke-FooterUpdate "index.html" $true
 }
 
 if (Test-Path "pages") {
     Get-ChildItem "pages\*.html" | ForEach-Object {
-        Process-File $_.FullName $false
+        Invoke-FooterUpdate $_.FullName $false
     }
 }
 
