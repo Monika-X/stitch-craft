@@ -3343,6 +3343,19 @@
     z-index: 1;
 }
 
+[dir="rtl"] .hero-split-image {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .hero-split .hero-split-content {
+    padding: 8rem max(1rem, calc((100% - 1200px) / 2)) 8rem 0;
+}
+
+[dir="rtl"] .hero-split-image::after {
+    background: linear-gradient(to left, var(--bg-color) 0%, transparent 20%);
+}
+
 @media (max-width: 1024px) {
     .hero-split .hero-split-content h1 {
         width: 100%;
