@@ -2345,7 +2345,6 @@
 }
 
 .gal-dark-bg .gal-section-desc {
-    color: rgba(255, 255, 255, 0.75);
     border-top-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -2370,6 +2369,7 @@
 [data-theme="dark"] .gal-section-desc,
 .gal-dark-bg .gal-section-desc {
     border-top-color: rgba(255,255,255,0.08);
+    color: rgba(255, 255, 255, 0.75);
 }
 .gal-section-desc strong {
     color: var(--color-accent);
