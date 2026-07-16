@@ -811,7 +811,7 @@
     }
 
     /* --- PREVENT HORIZONTAL OVERFLOW --- */
-    body, main, section, .container, .footer {
+    body, main, section, .footer {
         max-width: 100vw;
         overflow-x: hidden;
     }
