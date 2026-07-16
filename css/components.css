@@ -127,6 +127,7 @@
     display: flex;
     align-items: center;
     gap: var(--space-sm);
+    position: relative;
     z-index: calc(var(--z-navbar) + 2);
 }
 
@@ -181,6 +182,7 @@
 .user-dropdown {
     position: relative;
     display: inline-block;
+    z-index: 9999;
 }
 
 .dropdown-menu {
