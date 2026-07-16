@@ -2335,13 +2335,25 @@
     background-color: #0e0e0e;
 }
 
-/* Force all text to be light inside the always-dark Traditional Wear section */
+/* Force all text to be light inside the always-dark Traditional Wear section.
+   Must target tags directly because global h1-h6 and body rules set color explicitly,
+   preventing inheritance from parent containers. */
 .gal-dark-bg .section-subtitle {
-    color: var(--color-accent);
+    color: var(--color-accent) !important;
 }
 
+.gal-dark-bg h1,
+.gal-dark-bg h2,
+.gal-dark-bg h3,
+.gal-dark-bg h4,
+.gal-dark-bg h5,
+.gal-dark-bg h6,
 .gal-dark-bg .gal-section-title {
-    color: #ffffff;
+    color: #ffffff !important;
+}
+
+.gal-dark-bg p {
+    color: rgba(255, 255, 255, 0.82) !important;
 }
 
 .gal-dark-bg .gal-section-desc {
