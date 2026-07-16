@@ -2,7 +2,7 @@
 
 /* Hero Section */
 .page-hero {
-    background-image: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), url('https://i.pinimg.com/736x/53/2c/cb/532ccb6f0c74145fc527a3c9aeccc593.jpg');
+    background-image: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), url('../images/contact-hero.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
