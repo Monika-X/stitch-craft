@@ -396,12 +396,7 @@
 }
 
 @media (max-width: 480px) {
-    .hours-row {
-        flex-direction: column;
-        align-items: center;
-        gap: var(--space-xs);
-        text-align: center;
-    }
+    /* Kept empty or remove if no other styles exist in this query */
 }
 
 /* Premium Contact Redesign Additions */
