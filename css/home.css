@@ -744,6 +744,12 @@ section {
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
+    section {
+        padding: 6rem 0;
+    }
+    .section-header {
+        margin-bottom: 4rem;
+    }
     .hero-content {
         padding-bottom: 5rem;
         gap: 2.5rem;
@@ -769,6 +775,12 @@ section {
 }
 
 @media (max-width: 768px) {
+    section {
+        padding: 4rem 0;
+    }
+    .section-header {
+        margin-bottom: 3rem;
+    }
     .hero h1 {
         font-size: 3.5rem;
     }
@@ -782,6 +794,12 @@ section {
 }
 
 @media (max-width: 480px) {
+    section {
+        padding: 3rem 0;
+    }
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
     .hero {
         margin-top: 0;
         padding-top: 90px; /* navbar height compensation */
