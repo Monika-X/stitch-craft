@@ -3308,13 +3308,15 @@
 /* Hero Split - Overlapping Layout */
 .hero-split {
     padding-top: var(--nav-height);
+    padding-left: 0;
+    padding-right: 0;
     background-color: var(--color-bg-primary);
     position: relative;
     overflow: hidden;
 }
 
 .hero-split .hero-split-content {
-    padding: 8rem 0 8rem max(1rem, calc((100% - 1200px) / 2));
+    padding: 8rem 0 8rem max(1rem, calc((100vw - 1200px) / 2));
     position: relative;
     z-index: 3;
     background: transparent;
@@ -3349,7 +3351,7 @@
 }
 
 [dir="rtl"] .hero-split .hero-split-content {
-    padding: 8rem max(1rem, calc((100% - 1200px) / 2)) 8rem 0;
+    padding: 8rem max(1rem, calc((100vw - 1200px) / 2)) 8rem 0;
 }
 
 [dir="rtl"] .hero-split-image::after {
