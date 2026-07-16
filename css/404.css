@@ -198,8 +198,13 @@ body.error-body {
 }
 
 @media (max-width: 768px) {
+    body.error-body {
+        display: block;
+    }
+
     .error-wrapper {
         flex-direction: column;
+        width: 100%;
     }
     
     .error-image {
