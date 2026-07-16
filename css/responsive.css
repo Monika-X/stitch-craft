@@ -410,7 +410,8 @@
     .gal-wedding-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
     .gal-wedding-grid .wedding-hero,
     .gal-wedding-grid .gal-item { height: 280px; grid-column: span 1; }
-    .gal-trad-grid { grid-template-columns: 1fr 1fr; }
+    .gal-trad-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+    .gal-trad-grid .gal-item { height: 200px; }
     .gal-workshop-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
     .gal-workshop-grid .gal-item { height: 240px; }
     .gal-workshop-grid .gal-item.wide { grid-column: span 1; }
@@ -422,6 +423,8 @@
     .gal-row-4 { grid-template-columns: 1fr; }
     .gal-trad-grid { grid-template-columns: 1fr; }
     .gal-insta-grid { grid-template-columns: 1fr; }
+    .gal-section { padding: 1.5rem 0 4rem 0; }
+    .gal-section-header { margin-bottom: 2rem; }
 }
 
 /* BLOG RESPONSIVE */
