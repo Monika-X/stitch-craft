@@ -523,12 +523,14 @@ section:first-of-type .section-header {
     margin-bottom: 1.5rem;
     font-family: var(--font-heading);
     font-weight: 400;
+    color: #ffffff;
 }
 
 .page-hero p {
     font-size: 1.25rem;
     font-weight: 300;
     opacity: 0.85;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* Contact cards — remove rounded corners, align with editorial aesthetic */
