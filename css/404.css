@@ -1,4 +1,7 @@
 /* 404 Page Specific Styles */
+* {
+    box-sizing: border-box;
+}
 body.error-body {
     background-color: var(--bg-color);
     display: flex;
