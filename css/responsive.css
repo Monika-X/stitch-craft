@@ -253,6 +253,13 @@
         height: 1px;
         background: linear-gradient(to right, transparent, var(--color-accent), transparent);
     }
+    
+    /* Hero Description */
+    .page-hero-desc {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
 
     /* Tailors */
     .tailors-grid {
