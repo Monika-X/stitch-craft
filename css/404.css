@@ -32,7 +32,7 @@ body.error-body {
 
 .error-image {
     flex: 1;
-    background: url('../images/404-illustration.png') no-repeat center center;
+    background: url('https://i.pinimg.com/736x/db/c1/0c/dbc10cfc865067f2b4b8d22989728a74.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
     box-shadow: inset -100px 0 150px -50px var(--bg-color);
