@@ -241,3 +241,59 @@ body.error-body {
         justify-content: center;
     }
 }
+
+@media (max-width: 480px) {
+    .error-content {
+        padding: 30px 20px;
+    }
+    
+    .error-code {
+        font-size: 5rem;
+    }
+    
+    .error-content h1 {
+        font-size: 2rem;
+    }
+    
+    .error-content p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    
+    .error-search {
+        margin-bottom: 30px;
+    }
+    
+    .error-search input {
+        font-size: 1rem;
+        padding: 16px 20px 16px 45px;
+    }
+    
+    [dir="rtl"] .error-search input {
+        padding: 16px 45px 16px 20px;
+    }
+    
+    .btn-primary, .btn-outline {
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .error-content {
+        padding: 25px 15px;
+    }
+    
+    .error-code {
+        font-size: 4rem;
+    }
+    
+    .error-content h1 {
+        font-size: 1.6rem;
+    }
+    
+    .error-brand {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+}
