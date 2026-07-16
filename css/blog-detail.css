@@ -192,15 +192,20 @@
     filter: grayscale(0%);
 }
 
+.editorial-figure {
+    text-align: center;
+    margin: 3rem 0;
+}
+
 .editorial-caption {
     font-size: 0.8rem;
     color: var(--color-text-secondary);
-    text-align: right;
     margin-top: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding-right: 0.5rem;
-    border-right: 2px solid var(--color-accent);
+    display: inline-block;
+    padding-left: 1rem;
+    border-left: 2px solid var(--color-accent);
 }
 
 /* ---- Pull Quote ---- */
