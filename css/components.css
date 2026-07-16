@@ -1584,6 +1584,14 @@
     direction: ltr;
 }
 
+[dir="rtl"] .svc-detail-grid.reverse {
+    direction: ltr;
+}
+
+[dir="rtl"] .svc-detail-grid.reverse > * {
+    direction: rtl;
+}
+
 .svc-detail-image {
     position: relative;
 }

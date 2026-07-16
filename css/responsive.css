@@ -64,7 +64,7 @@
   }
 }
 
-/* Small Mobile (down to 320px) */
+/* Small Mobile */
 @media (max-width: 480px) {
   .nav-brand {
     font-size: 1.5rem;
@@ -84,13 +84,6 @@
 }
 
 
-
-
-
-
-
-
-
 /* =========================================
    HOME 2 RESPONSIVE - DYNAMIC COMPOSITION
    ========================================= */
@@ -102,7 +95,7 @@
         min-height: auto;
     }
     .hero-split-content {
-        padding: 5rem 5% 4rem;
+        padding: 2rem 5% 3rem;
         text-align: center;
         align-items: center;
     }
@@ -201,6 +194,25 @@
     .inline-cta-form input {
         border-bottom: 1px solid #333;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Home 2 - reduce hero gap on mobile */
+    .hero-split {
+        padding-top: 0;
+    }
+    .hero-split-content {
+        padding: 1.5rem 5% 2.5rem;
+    }
+    /* Reduce excessive section padding on all home2 sections */
+    .bespoke-journey,
+    .fabric-masonry,
+    .how-it-works,
+    .expertise,
+    .brand-timeline,
+    .inline-cta {
+        padding: 4rem 0;
     }
 }
 
@@ -308,8 +320,9 @@
         grid-template-columns: 1fr;
         gap: 4rem;
     }
-    .svc-detail-grid.reverse {
-        direction: ltr;
+    .svc-detail-grid.reverse,
+    .svc-detail-grid.reverse > * {
+        direction: inherit;
     }
     .svc-badge {
         right: 1rem;
@@ -492,7 +505,6 @@
         height: 14px;
     }
 
-    /* Hide RTL label text on tiny screens, show only icon */
     #rtl-toggle {
         font-size: 0.6rem;
         padding: 4px 5px;
@@ -516,8 +528,11 @@
     }
 
     /* --- HOME SPLIT HERO --- */
+    .hero-split {
+        padding-top: 0 !important;
+    }
     .hero-split-content {
-        padding: 3rem 4% 2rem;
+        padding: 1.5rem 4% 2rem !important;
     }
 
     .hero-split-content h1 {
