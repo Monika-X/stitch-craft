@@ -22,22 +22,36 @@
     <nav class="navbar">
         <div class="container">
             <a href="../index.html" class="nav-brand">Stitch<span>Craft</span></a>
+            
             <ul class="nav-menu">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
                 <li><a href="home2.html" class="nav-link">Home 2</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+
             <div class="nav-controls">
+                <div class="user-dropdown">
+                    <button class="icon-btn user-btn" aria-label="User Menu">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="login.html" class="dropdown-item">Login</a>
+                        <a href="signup.html" class="dropdown-item">Sign Up</a>
+                    </div>
+                </div>
                 <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <!-- Simple moon icon SVG -->
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                 </button>
                 <button id="rtl-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
                 <button class="hamburger" aria-label="Menu">
-                    <span></span><span></span><span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
         </div>
@@ -122,7 +136,7 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-col brand-col">
-                    <a href="../index.html" class="nav-brand">Stitch<span>Craft</span></a>
+                    <a href="index.html" class="nav-brand">Stitch<span>Craft</span></a>
                     <p class="footer-desc">Where heritage tailoring meets contemporary design. We craft bespoke garments that transcend generations, built on uncompromising quality and peerless artistry.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
@@ -133,21 +147,21 @@
                 <div class="footer-col links-col">
                     <h3>Atelier</h3>
                     <ul class="footer-links">
-                        <li><a href="services.html">Bespoke Tailoring</a></li>
-                        <li><a href="services.html">Bridal Couture</a></li>
-                        <li><a href="services.html">Alteration Services</a></li>
-                        <li><a href="gallery.html">The Gallery</a></li>
-                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="pages/services.html">Bespoke Tailoring</a></li>
+                        <li><a href="pages/services.html">Bridal Couture</a></li>
+                        <li><a href="pages/services.html">Alteration Services</a></li>
+                        <li><a href="pages/gallery.html">The Gallery</a></li>
+                        <li><a href="pages/about.html">Our Story</a></li>
                     </ul>
                 </div>
                 <div class="footer-col links-col">
                     <h3>Information</h3>
                     <ul class="footer-links">
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="blog.html">Journal</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="pages/faq.html">FAQ</a></li>
+                        <li><a href="pages/blog.html">Journal</a></li>
+                        <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="pages/terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-col newsletter-col">
@@ -163,9 +177,9 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 StitchCraft Atelier. All rights reserved.</p>
                 <div class="footer-bottom-links">
-                    <a href="maintenance.html">Sitemap</a>
-                    <a href="privacy-policy.html">Privacy</a>
-                    <a href="terms-and-conditions.html">Terms</a>
+                    <a href="pages/maintenance.html">Sitemap</a>
+                    <a href="pages/privacy-policy.html">Privacy</a>
+                    <a href="pages/terms-and-conditions.html">Terms</a>
                 </div>
             </div>
         </div>
