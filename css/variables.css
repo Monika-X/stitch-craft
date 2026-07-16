@@ -50,7 +50,7 @@
   --color-border: #e0e0e0;
   --color-shadow: rgba(0, 0, 0, 0.05);
   
-  --color-navbar-bg: rgba(255, 255, 255, 0.95);
+  --color-navbar-bg: rgba(255, 255, 255, 1);
   --color-footer-bg: #111111;
   --color-footer-text: #ffffff;
   
@@ -86,7 +86,7 @@
   --color-border: #333333;
   --color-shadow: rgba(0, 0, 0, 0.3);
   
-  --color-navbar-bg: rgba(18, 18, 18, 0.95);
+  --color-navbar-bg: rgba(18, 18, 18, 1);
   --color-footer-bg: #0a0a0a;
 
   /* Aliases for newly added pages */
