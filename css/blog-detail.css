@@ -127,6 +127,7 @@
     justify-content: flex-end;
     padding: 5rem 4rem 5rem max(2rem, calc((100vw - 1200px) / 2 + 2rem));
     border-right: 1px solid var(--color-border);
+    min-width: 0;
 }
 
 .hero-split-content h1 {
@@ -137,6 +138,10 @@
     font-weight: 400;
     font-family: var(--font-heading);
     color: var(--color-text-primary);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .hero-split-img {

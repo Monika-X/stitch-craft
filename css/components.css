@@ -3023,6 +3023,7 @@
     flex-direction: column;
     justify-content: center;
     padding: var(--space-xxl);
+    min-width: 0;
 }
 
 .hero-split-content h1 {
@@ -3032,6 +3033,10 @@
     font-weight: 400;
     font-family: var(--font-heading);
     letter-spacing: -0.02em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .hero-split-img {
