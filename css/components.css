@@ -374,7 +374,8 @@
 
 .newsletter-form {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 8px;
     position: relative;
 }
 
@@ -404,19 +405,26 @@
     background: var(--color-accent);
     color: #000;
     border: none;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding: 0 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 1rem 1.5rem;
+    min-height: 48px;
+    width: 100%;
     cursor: pointer;
     transition: all 0.4s ease;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .newsletter-form button.btn-subscribe:hover {
     background: #fff;
+    color: #000;
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
 }
 
 .form-feedback {

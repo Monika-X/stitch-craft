@@ -60,7 +60,7 @@ section {
   inset: 0;
   background-image: url('https://i.pinimg.com/736x/d0/96/c6/d096c674cdeb05e39753bd5b0cefe46e.jpg');
   background-size: cover;
-  background-position: center top;
+  background-position: center 40%;
   z-index: -2;
 }
 
@@ -778,6 +778,64 @@ section {
     }
     .service-content h3 {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        margin-top: 0;
+        padding-top: 90px; /* navbar height compensation */
+        min-height: auto;
+        padding-bottom: 4rem;
+    }
+
+    .hero-content {
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.2rem, 9vw, 3rem);
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .hero-btns .btn {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero {
+        margin-top: 0;
+        padding-top: 80px;
+        min-height: auto;
+        padding-bottom: 3rem;
+    }
+
+    .hero-content {
+        padding-top: 1rem;
+        gap: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.9rem, 8.5vw, 2.4rem);
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+        gap: 0.75rem;
     }
 }
 
