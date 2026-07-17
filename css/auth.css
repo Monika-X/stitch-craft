@@ -405,3 +405,29 @@
 [dir="rtl"] .auth-options {
     flex-direction: row-reverse;
 }
+
+/* ---- Floating Controls ---- */
+.auth-floating-controls {
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    z-index: 100;
+}
+
+[dir="rtl"] .auth-floating-controls {
+    right: auto;
+    left: 2.5rem;
+}
+
+/* ---- Floating Controls (Signup Specific) ---- */
+.auth-floating-controls.signup-controls {
+    right: auto;
+    left: 2.5rem;
+}
+
+[dir="rtl"] .auth-floating-controls.signup-controls {
+    left: auto;
+    right: 2.5rem;
+}

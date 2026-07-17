@@ -211,13 +211,22 @@
     /* CTA */
     .inline-cta-form {
         flex-direction: column;
-        padding: 0 5%;
-        border-bottom: none;
-        gap: 2rem;
+        padding: 0;
+        border: none;
+        background: transparent;
+        backdrop-filter: none;
+        box-shadow: none;
+        gap: 1rem;
     }
     .inline-cta-form input {
-        border-bottom: 1px solid #333;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+        border-radius: 40px;
+        padding: 1rem 1.5rem;
         text-align: center;
+        background: rgba(255, 255, 255, 0.03);
+    }
+    .inline-cta-form .btn-light {
+        width: 100%;
     }
 }
 

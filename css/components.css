@@ -1506,6 +1506,19 @@
     margin-bottom: 1rem;
 }
 
+/* Premium highlight for hero subtitle to improve visibility */
+.svc-hero .section-subtitle {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* ---- 1. HERO ---- */
 .svc-hero {
     position: relative;
@@ -1739,6 +1752,9 @@
     border-radius: 12px;
     transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.5s ease, border-color 0.5s ease, background-color 0.5s ease;
     position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .svc-alt-card:hover,
@@ -1783,12 +1799,13 @@
     font-size: 1.8rem;
     color: var(--color-accent);
     margin-bottom: 0.5rem;
+    margin-top: auto;
 }
 
 .alt-time {
-    font-size: 0.78rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     color: rgba(255, 255, 255, 0.4);
 }
 

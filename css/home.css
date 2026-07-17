@@ -869,3 +869,20 @@ section {
 [data-theme="dark"] .feature-card::before {
     color: #fff;
 }
+
+/* --- Hero Button Contrast Fixes --- */
+.hero-btns .btn-primary:hover,
+.hero-btns .btn-outline:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-color: #fff !important;
+}
+
+/* --- Dark Theme Hero Button Hover Effect --- */
+[data-theme="dark"] .hero-btns .btn-primary:hover {
+    background-color: var(--color-accent) !important;
+    color: #000 !important;
+    border-color: var(--color-accent) !important;
+    box-shadow: 0 5px 15px rgba(212, 181, 126, 0.3) !important;
+    transform: translateY(-2px);
+}
