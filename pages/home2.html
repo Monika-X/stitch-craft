@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bespoke Experience - StitchCraft</title>
+    <meta name="description" content="Discover the ultimate bespoke tailoring experience with StitchCraft.">
+    <!-- CSS Architecture -->
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/polish.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
+</head>
+<body>
+    
+
+    <!-- Navigation -->
+        <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="nav-brand">Stitch<span>Craft</span></a>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="home2.html" class="nav-link">Home 2</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <!-- Simple moon icon SVG -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button id="rtl-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+                <a href="contact.html" class="btn btn-primary nav-cta">Book Now</a>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Hero (Split Screen) -->
+        <section class="hero-split">
+            <div class="hero-split-content reveal-left active">
+                <span class="subtitle">The Pinnacle of Sartorial Elegance</span>
+                <h1>Crafting Your<br>Legacy in Cloth</h1>
+                <p>Experience tailoring that respects tradition while embracing modern luxury. From the first consultation to the final fitting, our master tailors craft each garment to fit you perfectly.</p>
+                <div class="hero-btns">
+                    <a href="#appointment" class="btn btn-primary">Book Consultation</a>
+                </div>
+            </div>
+            <div class="hero-split-image reveal-right active">
+                <img src="https://plus.unsplash.com/premium_photo-1677355760418-a9f7a1fe6b69?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bespoke Tailoring First Fit" loading="lazy" width="900" height="1200">
+            </div>
+        </section>
+
+        <!-- 2. Bespoke Tailoring Experience -->
+        <section class="bespoke-journey container">
+            <div class="section-header center">
+                <span class="section-subtitle">The Journey</span>
+                <h2 class="section-title">A Truly Bespoke Experience</h2>
+            </div>
+            
+            <div class="journey-block reveal">
+                <div class="journey-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1683141453509-b9f15684c6df?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tailor working" loading="lazy">
+                </div>
+                <div class="journey-text">
+                    <h3>01. The Consultation</h3>
+                    <p>We begin by understanding your lifestyle, preferences, and the purpose of the garment. This ensures the final piece is uniquely yours.</p>
+                </div>
+            </div>
+            
+            <div class="journey-block reverse reveal">
+                <div class="journey-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1676586308139-b403936f334b?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fittings" loading="lazy">
+                </div>
+                <div class="journey-text">
+                    <h3>02. The Art of Fitting</h3>
+                    <p>Multiple fittings guarantee a flawless silhouette. We refine the drape and structure until it feels like a second skin.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Fabric Collection (Masonry-style) -->
+        <section class="fabric-masonry-section">
+            <div class="container">
+                <div class="section-header fabric-header">
+                    <h2 class="section-title">World-Class Fabrics</h2>
+                    <p>Sourced from the finest heritage mills in Italy and England, our fabric selection represents the absolute zenith of textile artistry. We meticulously curate exceptional worsted wools, rare Mongolian cashmere, and luminescent silks that offer unparalleled drape, breathability, and resilience. Each bolt is selected not merely for its prestige, but for its profound ability to translate a master tailorÃ¢â‚¬â„¢s vision into an enduring, wearable masterpiece that ages gracefully over time.</p>
+                </div>
+                <div class="masonry-grid">
+                    <div class="masonry-item large reveal">
+                        <img src="https://images.unsplash.com/photo-1705412877691-70f6913aaa1e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fFN1cGVyJTIwMTUwcyUyMFdvb2wlMjBmYWJyaWN8ZW58MHx8MHx8fDA%3D" alt="Super 150s Wool" loading="lazy">
+                        <div class="masonry-overlay"><span>Super 150s Wool</span></div>
+                    </div>
+                    <div class="masonry-item reveal">
+                        <img src="https://plus.unsplash.com/premium_photo-1672954385679-7ed03fe2fead?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wyfHx8ZW58MHx8fHx8" alt="Mulberry Silk" loading="lazy">
+                        <div class="masonry-overlay"><span>Mulberry Silk</span></div>
+                    </div>
+                    <div class="masonry-item reveal">
+                        <img src="https://plus.unsplash.com/premium_photo-1768994318919-80703f2ec947?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Scottish Cashmere" loading="lazy">
+                        <div class="masonry-overlay"><span>Scottish Cashmere</span></div>
+                    </div>
+                    <div class="masonry-item reveal">
+                        <img src="https://images.unsplash.com/photo-1588610992315-5654831ceebd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Egyptian Cotton" loading="lazy">
+                        <div class="masonry-overlay"><span>Egyptian Cotton</span></div>
+                    </div>
+                    <div class="masonry-item reveal">
+                        <img src="https://images.unsplash.com/photo-1705290304455-35ffb433f560?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Irish Linen" loading="lazy">
+                        <div class="masonry-overlay"><span>Irish Linen</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Anatomy of a Suit -->
+        <section class="anatomy-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-subtitle">Precision Process</span>
+                    <h2 class="section-title">Anatomy of a Suit</h2>
+                    <p>Every bespoke garment begins with a meticulous understanding of your unique form, ensuring a perfect architectural foundation.</p>
+                </div>
+            </div>
+            <div class="anatomy-grid">
+                <div class="anatomy-item reveal">
+                    <div class="anatomy-item-top">
+                        <span class="anatomy-item-count">01</span>
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <div class="anatomy-item-body">
+                        <h3>Precision Metrics</h3>
+                        <p>We record over 35 unique measurement points across your body architecture, creating a comprehensive digital profile that captures every nuance of your form.</p>
+                        <span class="anatomy-item-tag">Measurements</span>
+                    </div>
+                </div>
+                <div class="anatomy-item reveal">
+                    <div class="anatomy-item-top">
+                        <span class="anatomy-item-count">02</span>
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+                    </div>
+                    <div class="anatomy-item-body">
+                        <h3>Posture Analysis</h3>
+                        <p>We account for shoulder slope, back curvature, and natural stance to ensure the garment drapes flawlessly with every movement you make.</p>
+                        <span class="anatomy-item-tag">Ergonomics</span>
+                    </div>
+                </div>
+                <div class="anatomy-item reveal">
+                    <div class="anatomy-item-top">
+                        <span class="anatomy-item-count">03</span>
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    </div>
+                    <div class="anatomy-item-body">
+                        <h3>Pattern Drafting</h3>
+                        <p>A unique paper pattern is drafted exclusively for your measurements and posture profile, serving as the architectural blueprint for your garment.</p>
+                        <span class="anatomy-item-tag">Blueprint</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Tailor Expertise -->
+        <section class="tailor-expertise">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Master Craftsmen</h2>
+                </div>
+                <div class="expert-grid">
+                    <div class="expert-card reveal">
+                        <div class="expert-img-placeholder"><img src="https://i.pinimg.com/1200x/2a/14/45/2a14455987a5f6c2f493ba3937b4311e.jpg" alt="Master Cutter" loading="lazy"></div>
+                        <div class="expert-info">
+                            <h3>Master Cutter</h3>
+                            <p class="years">25+ Years Experience</p>
+                            <p>Trained in Savile Row techniques, shaping the foundational structure of every garment.</p>
+                        </div>
+                    </div>
+                    <div class="expert-card reveal">
+                        <div class="expert-img-placeholder"><img src="https://i.pinimg.com/736x/a7/08/32/a708320b861ed5e53e2ed7e6c9b14b59.jpg" alt="Finishing Tailor" loading="lazy"></div>
+                        <div class="expert-info">
+                            <h3>Finishing Tailor</h3>
+                            <p class="years">15+ Years Experience</p>
+                            <p>Specializing in hand-stitched buttonholes, lapel rolling, and fine edge detailing.</p>
+                        </div>
+                    </div>
+                    <div class="expert-card reveal">
+                        <div class="expert-img-placeholder"><img src="https://i.pinimg.com/1200x/f4/00/b0/f400b03852b2b39223c687ecd3c4aa17.jpg" alt="Alterations Specialist" loading="lazy" style="object-position: center 15%;"></div>
+                        <div class="expert-info">
+                            <h3>Alterations Specialist</h3>
+                            <p class="years">20+ Years Experience</p>
+                            <p>Expert in reconstructing and refining existing garments to modern standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. From Cloth to Creation -->
+        <section class="delivery-timeline container">
+            <div class="section-header center">
+                <span class="section-subtitle">The Making</span>
+                <h2 class="section-title">From Cloth to Creation</h2>
+                <p>Our meticulous process transforms fine fabric into a bespoke masterpiece across three carefully orchestrated stages.</p>
+            </div>
+            <div class="creation-cards">
+                <div class="creation-card reveal">
+                    <div class="creation-card-header">
+                        <span class="creation-step">Step 01</span>
+                        <div class="creation-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </div>
+                    </div>
+                    <div class="creation-card-body">
+                        <span class="creation-duration">Week 1</span>
+                        <h4>Consultation &amp; First Fit</h4>
+                        <p>We discuss your vision, hand-select fabrics from heritage mills, and take over 35 precise measurements to create your digital fit profile.</p>
+                    </div>
+                </div>
+                <div class="creation-card reveal">
+                    <div class="creation-card-header">
+                        <span class="creation-step">Step 02</span>
+                        <div class="creation-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        </div>
+                    </div>
+                    <div class="creation-card-body">
+                        <span class="creation-duration">Weeks 2-5</span>
+                        <h4>Refining Fittings</h4>
+                        <p>Multiple fitting sessions allow our master tailors to refine the drape and structure, ensuring a silhouette that feels like a second skin.</p>
+                    </div>
+                </div>
+                <div class="creation-card reveal">
+                    <div class="creation-card-header">
+                        <span class="creation-step">Step 03</span>
+                        <div class="creation-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                    </div>
+                    <div class="creation-card-body">
+                        <span class="creation-duration">Weeks 6-8</span>
+                        <h4>Final Completion</h4>
+                        <p>Your bespoke garment is meticulously hand-finished with premium details and delivered to our atelier for the final approval fitting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Appointment CTA -->
+        <section id="appointment" class="appointment-cta reveal">
+            <div class="container cta-inner">
+                <h2>Ready for Perfection?</h2>
+                <p>Reserve your private appointment with our master tailors. Step into our world of bespoke craftsmanship, where every detail is meticulously shaped to complement your unique lifestyle. Experience an unparalleled styling consultation over whiskey or espresso, and begin the journey toward an extraordinary wardrobe that truly defines your legacy.</p>
+                <form id="cta-booking-form" class="inline-cta-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-light">Request Booking</button>
+                </form>
+                <div id="cta-success-msg" class="cta-success-msg" style="display: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Thank you! We will contact you shortly to confirm your appointment.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+                <footer class="footer premium-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="nav-brand">Stitch<span>Craft</span></a>
+                    <p class="footer-desc">Where heritage tailoring meets contemporary design. We craft bespoke garments that transcend generations, built on uncompromising quality and peerless artistry.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" aria-label="Pinterest"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20l4-9"></path><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75-1.554 3.75-4a5 5 0 1 0-9.7 1.7"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0-18 0"></path></svg></a>
+                        <a href="#" aria-label="X"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col links-col">
+                    <h3>Atelier</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Bespoke Tailoring</a></li>
+                        <li><a href="services.html">Bridal Couture</a></li>
+                        <li><a href="services.html">Alteration Services</a></li>
+                        <li><a href="gallery.html">The Gallery</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col links-col">
+                    <h3>Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h3>The StitchCraft Edit</h3>
+                    <p>Subscribe to receive exclusive insights into our latest collections and tailoring masterclasses.</p>
+                    <form class="newsletter-form global-ajax-form">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-subscribe">SUBSCRIBE</button>
+                    </form>
+                    <div class="form-feedback"></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StitchCraft Atelier. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="maintenance.html">Sitemap</a>
+                    <a href="privacy-policy.html">Privacy</a>
+                    <a href="terms-and-conditions.html">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/rtl.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

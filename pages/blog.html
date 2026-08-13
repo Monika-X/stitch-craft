@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - StitchCraft</title>
+    <meta name="description" content="Read the latest trends, styling tips, and tailoring secrets from the master tailors at StitchCraft.">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/polish.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="nav-brand">Stitch<span>Craft</span></a>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="home2.html" class="nav-link">Home 2</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <!-- Simple moon icon SVG -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button id="rtl-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+                <a href="contact.html" class="btn btn-primary nav-cta">Book Now</a>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Section 1: Premium Hero -->
+        <section class="blog-hero reveal-up">
+            <div class="container">
+                <h1>Style Journal</h1>
+                <p>Where masterful craftsmanship meets timeless elegance — curated stories on bespoke tailoring, refined womenswear, and the pursuit of impeccable style for those who demand nothing less.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Categories -->
+        <section class="blog-categories reveal">
+            <div class="container">
+                <ul class="blog-categories-list">
+                    <li><a href="#" class="blog-category-link active" data-filter="all">All Stories</a></li>
+                    <li><a href="#" class="blog-category-link" data-filter="tailoring-guide">Tailoring Guide</a></li>
+                    <li><a href="#" class="blog-category-link" data-filter="latest-trends">Latest Trends</a></li>
+                    <li><a href="#" class="blog-category-link" data-filter="wedding">Wedding</a></li>
+                    <li><a href="#" class="blog-category-link" data-filter="inside-the-atelier">Inside the Atelier</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 3: Featured Blog -->
+        <section class="blog-featured reveal">
+            <div class="container">
+                <div class="featured-article">
+                    <a href="blog-detail.html" class="featured-img-wrapper" aria-label="The Anatomy of a Perfect Bespoke Suit">
+                        <!-- Pinterest hotlinking is blocked by default, using a placeholder until a direct .jpg is provided -->
+                        <img src="https://images.unsplash.com/photo-1614786269829-d24616faf56d?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Black Wedding Suit" loading="lazy">
+                    </a>
+                    <div class="featured-content">
+                        <span class="article-meta">Tailoring Guide &mdash; July 15, 2026</span>
+                        <h2><a href="blog-detail.html">The Anatomy of a Perfect Bespoke Suit</a></h2>
+                        <p>From the first measurement to the final fitting, explore what makes a bespoke suit the ultimate expression of personal style and craftsmanship.</p>
+                        <a href="blog-detail.html" class="btn btn-secondary">Read Article</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Editor's Picks -->
+        <section class="blog-picks reveal">
+            <div class="container">
+                <div class="section-header center-align" style="margin-bottom: var(--space-lg);">
+                    <h2 class="section-title">Editor's Picks</h2>
+                </div>
+                <div class="picks-grid">
+                    <!-- Pick 1 -->
+                    <a href="blog-detail-fabrics.html" class="pick-card">
+                        <img src="https://media.istockphoto.com/id/1326417862/photo/young-woman-laughing-while-relaxing-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=bFjnv2f_Fe0FRY457r4pEN3OQHZcfNzzkCOTXDmaCwQ=" alt="Italian Wool" class="pick-img" loading="lazy">
+                        <div class="pick-content">
+                            <span class="article-meta">Fabrics &mdash; June 28</span>
+                            <h3>Why Italian Wool Remains the Gold Standard</h3>
+                        </div>
+                    </a>
+                    <!-- Pick 2 -->
+                    <a href="blog-detail-style.html" class="pick-card">
+                        <img src="../images/blog-style-hero.jpg" alt="Accessories" class="pick-img" loading="lazy">
+                        <div class="pick-content">
+                            <span class="article-meta">Style Guide &mdash; June 15</span>
+                            <h3>Mastering Pocket Squares and Tie Combinations</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Blog Grid (Recent Articles) -->
+        <section class="blog-grid-section reveal">
+            <div class="container">
+                <div class="section-header center-align" style="margin-bottom: var(--space-lg);">
+                    <h2 class="section-title">Recent Articles</h2>
+                </div>
+                <div class="blog-grid" id="blog-grid-container">
+                    <a href="blog-detail-1.html" class="blog-card blog-item">
+                        <img src="https://images.unsplash.com/photo-1614786269829-d24616faf56d?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bespoke Suits" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Bespoke Suits &mdash; July 2026</span>
+                        <h3>The Anatomy of a Perfect Bespoke Suit</h3>
+                    </a>
+                    <a href="blog-detail-2.html" class="blog-card blog-item">
+                        <img src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?q=80&w=800" alt="Custom Shirts" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Custom Shirts &mdash; July 2026</span>
+                        <h3>Why Custom Shirts Elevate Your Wardrobe</h3>
+                    </a>
+                    <a href="blog-detail-3.html" class="blog-card blog-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1663013422122-0464b0924dc0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RW1wb3dlcm1lbnQlMjBUaHJvdWdoJTIwV29tZW4ncyUyMFRhaWxvcmluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Women's Tailoring" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Women's Tailoring &mdash; July 2026</span>
+                        <h3>Empowerment Through Women's Tailoring</h3>
+                    </a>
+                    <a href="blog-detail-4.html" class="blog-card blog-item">
+                        <img src="https://images.unsplash.com/photo-1745270029066-8c1dfb37c03c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFRoZSUyMEdyb29tJ3MlMjBHdWlkZSUyMHRvJTIwQ2hvb3NpbmclMjBhJTIwVHV4ZWRvfGVufDB8fDB8fHww" alt="Wedding Tuxedos" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Wedding Tuxedos &mdash; July 2026</span>
+                        <h3>The Groom's Guide to Choosing a Tuxedo</h3>
+                    </a>
+                    <a href="blog-detail-5.html" class="blog-card blog-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1661601631162-d113a4b9278d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" alt="Business Attire" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Business Attire &mdash; July 2026</span>
+                        <h3>Navigating Modern Business Attire</h3>
+                    </a>
+                    <a href="blog-detail-6.html" class="blog-card blog-item">
+                        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U2Vhc29uYWwlMjBGYXNoaW9uJTNBJTIwVHJhbnNpdGlvbmluZyUyMFlvdXIlMjBXYXJkcm9iZSUyMHdvbWFufGVufDB8fDB8fHww" alt="Seasonal Fashion" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Seasonal Fashion &mdash; July 2026</span>
+                        <h3>Seasonal Fashion: Transitioning Your Wardrobe</h3>
+                    </a>
+                    <a href="blog-detail-7.html" class="blog-card blog-item">
+                        <img src="https://media.istockphoto.com/id/1326417862/photo/young-woman-laughing-while-relaxing-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=bFjnv2f_Fe0FRY457r4pEN3OQHZcfNzzkCOTXDmaCwQ=" alt="Luxury Fabrics" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Luxury Fabrics &mdash; July 2026</span>
+                        <h3>Why Italian Wool Remains the Gold Standard</h3>
+                    </a>
+                    <a href="blog-detail-8.html" class="blog-card blog-item">
+                        <img src="https://images.unsplash.com/photo-1637110276019-df15ad496674?q=80&w=717&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fabric Care" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Fabric Care &mdash; July 2026</span>
+                        <h3>The Ultimate Guide to Fabric Care</h3>
+                    </a>
+                    <a href="blog-detail-9.html" class="blog-card blog-item">
+                        <img src="https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?q=80&w=800" alt="Suit Maintenance" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Suit Maintenance &mdash; July 2026</span>
+                        <h3>Suit Maintenance: Preserving Your Investment</h3>
+                    </a>
+                    <a href="blog-detail-10.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1622497170185-5d668f816a56?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8U3R5bGluZyUyMFRpcHMlMjBmb3IlMjB0aGUlMjBNb2Rlcm4lMjBHZW50bGVtYW58ZW58MHx8MHx8fDA%3D" alt="Styling Tips" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Styling Tips &mdash; July 2026</span>
+                        <h3>Styling Tips for the Modern Gentleman</h3>
+                    </a>
+                    <a href="blog-detail-11.html" class="blog-card blog-item hidden-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1681276170683-706111cf496e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VGhlJTIwUG93ZXIlMjBvZiUyMFN1YnRsZSUyMEFjY2Vzc29yaWVzfGVufDB8fDB8fHww" alt="Accessories" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Accessories &mdash; July 2026</span>
+                        <h3>The Power of Subtle Accessories</h3>
+                    </a>
+                    <a href="blog-detail-12.html" class="blog-card blog-item hidden-card">
+                        <img src="https://media.istockphoto.com/id/985124756/photo/serious-concentrated-bald-senior-male-couturier-in-glasses-wearing-measuring-tape-on-neck.webp?a=1&b=1&s=612x612&w=0&k=20&c=8YAsMzoR--nhByGmQvLUlDBDOk-4UlHa72kZycMb60c=" alt="Color Matching" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Color Matching &mdash; July 2026</span>
+                        <h3>Mastering Color Matching in Menswear</h3>
+                    </a>
+                    <a href="blog-detail-13.html" class="blog-card blog-item hidden-card">
+                        <img src="https://media.istockphoto.com/id/671342882/photo/groom-close-up-of-hands.webp?a=1&b=1&s=612x612&w=0&k=20&c=NPuLK9pI0NQGFyhO5lw1-40Ror2Yx3REaxpQpyJMsRw=" alt="Pocket Squares" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Pocket Squares &mdash; July 2026</span>
+                        <h3>How to Fold and Pair Pocket Squares</h3>
+                    </a>
+                    <a href="blog-detail-14.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1591729652476-e7f587578d9c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tie Guides" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Tie Guides &mdash; July 2026</span>
+                        <h3>The Definitive Tie Guide for Every Occasion</h3>
+                    </a>
+                    <a href="blog-detail-15.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1713519343749-4d11124a0cbd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fERlbXlzdGlmeWluZyUyME1vZGVybiUyMERyZXNzJTIwQ29kZXN8ZW58MHx8MHx8fDA%3D" alt="Dress Codes" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Dress Codes &mdash; July 2026</span>
+                        <h3>Demystifying Modern Dress Codes</h3>
+                    </a>
+                    <a href="blog-detail-16.html" class="blog-card blog-item hidden-card">
+                        <img src="https://media.istockphoto.com/id/2145191553/photo/close-up-of-an-anonymous-womans-hand-in-a-pocket.webp?a=1&b=1&s=612x612&w=0&k=20&c=ASMwhDPfTW_fMqVPbf1vFYnVOeDsjUR6WPsPZl72B5k=" alt="Office Wear" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Office Wear &mdash; July 2026</span>
+                        <h3>Elevating Your Everyday Office Wear</h3>
+                    </a>
+                    <a href="blog-detail-17.html" class="blog-card blog-item hidden-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1661301093012-cf876d46e873?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8VGhlJTIwRmluZSUyMExpbmUlMjBvZiUyMFNtYXJ0JTIwQ2FzdWFsfGVufDB8fDB8fHww" alt="Smart Casual" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Smart Casual &mdash; July 2026</span>
+                        <h3>The Fine Line of Smart Casual</h3>
+                    </a>
+                    <a href="blog-detail-18.html" class="blog-card blog-item hidden-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1723683616554-f8f15d7a252f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" alt="Formal Wear" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Formal Wear &mdash; July 2026</span>
+                        <h3>A Guide to Flawless Formal Wear</h3>
+                    </a>
+                    <a href="blog-detail-19.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1610444360699-2a912bbbcbe4?q=80&w=800" alt="Measurement Guide" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Measurement Guide &mdash; July 2026</span>
+                        <h3>Understanding the Measurement Process</h3>
+                    </a>
+                    <a href="blog-detail-20.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1517409276537-b952b610c37f?q=80&w=800" alt="Tailoring Process" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Tailoring Process &mdash; July 2026</span>
+                        <h3>Behind the Seams: The Tailoring Process</h3>
+                    </a>
+                    <a href="blog-detail-21.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1605051917757-ab895e638274?q=80&w=800" alt="Alterations" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Alterations &mdash; July 2026</span>
+                        <h3>Why Alterations Are the Secret to Great Style</h3>
+                    </a>
+                    <a href="blog-detail-22.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1622396091398-4db81d6006eb?q=80&w=800" alt="Luxury Craftsmanship" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Luxury Craftsmanship &mdash; July 2026</span>
+                        <h3>The Hallmarks of Luxury Craftsmanship</h3>
+                    </a>
+                    <a href="blog-detail-23.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1598555627374-12497672153c?q=80&w=800" alt="Fabric Selection" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Fabric Selection &mdash; July 2026</span>
+                        <h3>Selecting the Perfect Fabric for Your Climate</h3>
+                    </a>
+                    <a href="blog-detail-24.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1558220863-71d34f0c868c?q=80&w=800" alt="Groom Style Guide" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Groom Style Guide &mdash; July 2026</span>
+                        <h3>The Ultimate Groom Style Guide</h3>
+                    </a>
+                    <a href="blog-detail-25.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1555529771-835f59fc5efe?q=80&w=800" alt="Summer Collection" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Summer Collection &mdash; July 2026</span>
+                        <h3>Linen and Silk: Crafting the Summer Collection</h3>
+                    </a>
+                    <a href="blog-detail-26.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1588662998319-3c72b2260ff0?q=80&w=800" alt="Winter Collection" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Winter Collection &mdash; July 2026</span>
+                        <h3>Tweed and Flannel: Embracing the Winter Collection</h3>
+                    </a>
+                    <a href="blog-detail-27.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1601007797827-0fae24d2bd40?q=80&w=800" alt="Capsule Wardrobe" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Capsule Wardrobe &mdash; July 2026</span>
+                        <h3>Building a Timeless Capsule Wardrobe</h3>
+                    </a>
+                    <a href="blog-detail-28.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1564750275817-21a4fa8004f1?q=80&w=800" alt="Fashion Trends" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Fashion Trends &mdash; July 2026</span>
+                        <h3>Interpreting Runway Fashion Trends for Real Life</h3>
+                    </a>
+                    <a href="blog-detail-29.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1589139697926-7d43de79bfdf?q=80&w=800" alt="Premium Wardrobe Essentials" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Premium Wardrobe Essentials &mdash; July 2026</span>
+                        <h3>Investing in Premium Wardrobe Essentials</h3>
+                    </a>
+                    <a href="blog-detail-30.html" class="blog-card blog-item hidden-card">
+                        <img src="https://images.unsplash.com/photo-1590736969955-71cc94801759?q=80&w=800" alt="Client Style Stories" class="blog-card-img" loading="lazy">
+                        <span class="article-meta">Client Style Stories &mdash; July 2026</span>
+                        <h3>Client Style Stories: Transformations and Triumphs</h3>
+                    </a>
+                </div>
+                <div class="load-more-container">
+                    <button id="load-more-btn" class="btn btn-secondary" style="margin-top: var(--space-xl);">Load More Articles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Latest Trends -->
+        <section class="blog-trends reveal">
+            <div class="container trends-container">
+                <div class="trends-content">
+                    <span class="article-meta">Trend Forecast</span>
+                    <h2>The Return of the Double-Breasted Jacket</h2>
+                    <p>Once considered a relic of the past, the double-breasted suit has made a triumphant return to high-end fashion. Read our comprehensive guide on how to wear it in the modern era without looking out of place.</p>
+                    <a href="blog-detail-trend.html" class="btn btn-primary" style="margin-top: var(--space-md);">Read Forecast</a>
+                </div>
+                <img src="https://plus.unsplash.com/premium_photo-1697876203415-f337bf5d8f9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D" alt="Double breasted suit" class="trends-img" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Section 7: Newsletter CTA -->
+        <section class="blog-newsletter reveal">
+            <div class="container">
+                <h2>Join Our Style Ledger</h2>
+                <p>Subscribe to receive exclusive styling advice, editorial insights, and priority access to our seasonal fabric collections.</p>
+                <form class="newsletter-form global-ajax-form" action="#" method="POST">
+                    <input type="email" placeholder="Your email address..." required class="newsletter-input">
+                    <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+                <footer class="footer premium-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="nav-brand">Stitch<span>Craft</span></a>
+                    <p class="footer-desc">Where heritage tailoring meets contemporary design. We craft bespoke garments that transcend generations, built on uncompromising quality and peerless artistry.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" aria-label="Pinterest"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20l4-9"></path><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75-1.554 3.75-4a5 5 0 1 0-9.7 1.7"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0-18 0"></path></svg></a>
+                        <a href="#" aria-label="X"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col links-col">
+                    <h3>Atelier</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Bespoke Tailoring</a></li>
+                        <li><a href="services.html">Bridal Couture</a></li>
+                        <li><a href="services.html">Alteration Services</a></li>
+                        <li><a href="gallery.html">The Gallery</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col links-col">
+                    <h3>Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h3>The StitchCraft Edit</h3>
+                    <p>Subscribe to receive exclusive insights into our latest collections and tailoring masterclasses.</p>
+                    <form class="newsletter-form global-ajax-form">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-subscribe">SUBSCRIBE</button>
+                    </form>
+                    <div class="form-feedback"></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StitchCraft Atelier. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="maintenance.html">Sitemap</a>
+                    <a href="privacy-policy.html">Privacy</a>
+                    <a href="terms-and-conditions.html">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/rtl.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/blog-pagination.js?v=2"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

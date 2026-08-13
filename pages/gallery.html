@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - StitchCraft</title>
+    <meta name="description" content="Explore StitchCraft's curated gallery of bespoke suits, couture gowns, traditional wear, and our artisan workshop.">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/polish.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="nav-brand">Stitch<span>Craft</span></a>
+            
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="home2.html" class="nav-link">Home 2</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <!-- Simple moon icon SVG -->
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button id="rtl-toggle" class="icon-btn" aria-label="Toggle RTL">RTL</button>
+                <a href="contact.html" class="btn btn-primary nav-cta">Book Now</a>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- 1. HERO -->
+        <section class="gal-hero">
+            <div class="gal-hero-bg">
+                <img src="https://images.unsplash.com/photo-1485230405346-71acb9518d9c?q=80&w=800" alt="Gallery hero">
+                <div class="gal-hero-overlay"></div>
+            </div>
+            <div class="container gal-hero-content reveal-up">
+                <span class="section-subtitle">Crafted With Pride</span>
+                <h1 class="gal-hero-title">Our Gallery</h1>
+                <p>A curated showcase of bespoke tailoring &mdash; from precision-cut suits to hand-sewn gowns, every piece tells a story.</p>
+            </div>
+        </section>
+
+        <!-- GALLERY FILTER TABS -->
+        <div class="gal-tabs container reveal">
+            <button class="gal-tab active" data-filter="all">All</button>
+            <button class="gal-tab" data-filter="mens">Men's</button>
+            <button class="gal-tab" data-filter="womens">Women's</button>
+            <button class="gal-tab" data-filter="wedding">Wedding</button>
+            <button class="gal-tab" data-filter="traditional">Traditional</button>
+            <button class="gal-tab" data-filter="workshop">Workshop</button>
+        </div>
+
+        <!-- 2. MEN'S COLLECTION -->
+        <section class="gal-section container" id="mens-collection">
+            <div class="gal-section-header reveal">
+                <span class="section-subtitle">Collection 01</span>
+                <h2 class="gal-section-title">Men's Collection</h2>
+            </div>
+            <div class="gal-masonry reveal">
+                <!-- 1 -->
+                <div class="gal-item hero" data-category="mens" data-src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJ3MlMjBjbG90aGluZ3xlbnwwfHwwfHx8MA%3D%3D" data-caption="Bespoke Double-Breasted Navy Suit">
+                    <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJ3MlMjBjbG90aGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Bespoke Navy Suit" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Bespoke Double-Breasted Navy Suit</span></div>
+                </div>
+                <!-- 2 -->
+                <div class="gal-item" data-category="mens" data-src="https://plus.unsplash.com/premium_photo-1679056835084-7f21e64a3402?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVuJ3MlMjBjbG90aGluZ3xlbnwwfHwwfHx8MA%3D%3D" data-caption="Classic Grey Wool Suit">
+                    <img src="https://plus.unsplash.com/premium_photo-1679056835084-7f21e64a3402?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVuJ3MlMjBjbG90aGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Grey Wool Suit" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Classic Grey Wool Suit</span></div>
+                </div>
+                <!-- 3 -->
+                <div class="gal-item" data-category="mens" data-src="https://plus.unsplash.com/premium_photo-1672239496412-ab605befa53f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-caption="Ivory Linen Summer Suit">
+                    <img src="https://plus.unsplash.com/premium_photo-1672239496412-ab605befa53f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ivory Linen Suit" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Ivory Linen Summer Suit</span></div>
+                </div>
+                <!-- 4 -->
+                <div class="gal-item" data-category="mens" data-src="https://plus.unsplash.com/premium_photo-1672373832188-dae94638958b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8" data-caption="Black Tie Tuxedo &mdash; Evening Wear">
+                    <img src="https://plus.unsplash.com/premium_photo-1672373832188-dae94638958b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8" alt="Black Tuxedo" onerror="this.src="https://images.unsplash.com/photo-1585914924626-15adac1e6402?q=80&w=800"" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Black Tie Tuxedo &mdash; Evening Wear</span></div>
+                </div>
+                <!-- 5 -->
+                <div class="gal-item" data-category="mens" data-src="https://plus.unsplash.com/premium_photo-1673125287363-b4e837f1215f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-caption="Chalk-Stripe Charcoal Suit">
+                    <img src="https://plus.unsplash.com/premium_photo-1673125287363-b4e837f1215f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Charcoal Suit" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Chalk-Stripe Charcoal Suit</span></div>
+                </div>
+            </div>
+            <div class="gal-section-desc reveal-up">
+                <p>Our Men's Collection fuses Savile Row tradition with modern styling. Every bespoke suit is hand-cut and hand-finished by our master tailors, from commanding double-breasted power suits to lightweight summer linens — each one crafted to fit you perfectly and built to last for generations.</p>
+            </div>
+        </section>
+
+        <!-- 3. WOMEN'S COLLECTION -->
+        <section class="gal-section gal-alt-bg" id="womens-collection">
+            <div class="container">
+                <div class="gal-section-header reveal">
+                    <span class="section-subtitle">Collection 02</span>
+                    <h2 class="gal-section-title">Women's Collection</h2>
+                </div>
+                <div class="gal-row-4 reveal">
+                    <!-- 6 -->
+                    <div class="gal-item portrait" data-category="womens" data-src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNsb3RoaW5nfGVufDB8fDB8fHww" data-caption="Couture Evening Gown">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNsb3RoaW5nfGVufDB8fDB8fHww" alt="Evening Gown" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Couture Evening Gown</span></div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="gal-item portrait" data-category="womens" data-src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" data-caption="Tailored Women's Power Suit">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Women's Power Suit" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Tailored Women's Power Suit</span></div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="gal-item portrait" data-category="womens" data-src="https://images.unsplash.com/photo-1617019114583-affb34d1b3cd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGNsb3RoaW5nfGVufDB8fDB8fHww" data-caption="Silk Cocktail Dress">
+                        <img src="https://images.unsplash.com/photo-1617019114583-affb34d1b3cd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGNsb3RoaW5nfGVufDB8fDB8fHww" alt="Cocktail Dress" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Silk Cocktail Dress</span></div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="gal-item portrait" data-category="womens" data-src="https://images.unsplash.com/photo-1603344797033-f0f4f587ab60?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-caption="Structured Blazer &amp; Trouser Set">
+                        <img src="https://images.unsplash.com/photo-1603344797033-f0f4f587ab60?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blazer Set" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Structured Blazer &amp; Trouser Set</span></div>
+                    </div>
+                </div>
+                <div class="gal-section-desc reveal-up">
+                    <p>Our Women's Collection celebrates precision tailoring, fluid drapery, and confident femininity. From sharply tailored power suits to ethereal silk evening gowns, each garment is built on invisible architecture that provides perfect support — allowing you to move with grace and wear every piece as a second skin.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. WEDDING COLLECTION -->
+        <section class="gal-section container" id="wedding-collection">
+            <div class="gal-section-header reveal">
+                <span class="section-subtitle">Collection 03</span>
+                <h2 class="gal-section-title">Wedding Collection</h2>
+            </div>
+            <div class="gal-wedding-grid reveal">
+                <!-- 10 -->
+                <div class="gal-item wedding-hero" data-category="wedding" data-src="https://plus.unsplash.com/premium_photo-1675003663256-bfdc8b1acb2d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-caption="The Grand Bridal Suite">
+                    <img src="https://plus.unsplash.com/premium_photo-1675003663256-bfdc8b1acb2d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bridal" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">The Grand Bridal Suite</span></div>
+                </div>
+                <!-- 11 -->
+                <div class="gal-item" data-category="wedding" data-src="https://images.unsplash.com/photo-1668371459824-094a960a227d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-caption="Groom's Bespoke Morning Suit">
+                    <img src="https://images.unsplash.com/photo-1668371459824-094a960a227d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Morning Suit" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Groom's Bespoke Morning Suit</span></div>
+                </div>
+                <!-- 12 -->
+                <div class="gal-item" data-category="wedding" data-src="https://plus.unsplash.com/premium_photo-1664530452424-2bc239d787d8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8V2VkZGluZyUyMENvbGxlY3Rpb24lMjBzdGl0Y2hpbmd8ZW58MHx8MHx8fDA%3D" data-caption="Groomsmen Ensemble &mdash; Ivory &amp; Gold">
+                    <img src="https://plus.unsplash.com/premium_photo-1664530452424-2bc239d787d8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8V2VkZGluZyUyMENvbGxlY3Rpb24lMjBzdGl0Y2hpbmd8ZW58MHx8MHx8fDA%3D" alt="Groomsmen" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Groomsmen Ensemble &mdash; Ivory &amp; Gold</span></div>
+                </div>
+            </div>
+            <div class="gal-section-desc reveal-up">
+                <p>Your wedding day deserves attire as flawless as your commitment. For the groom, our bespoke tuxedos and morning suits are cut with exacting precision, while our bridal gowns are built on structural foundations for a flawless fit — finished with intricate beadwork, delicate embroidery, and sweeping trains. Every garment is crafted with you through a deeply collaborative process that reflects your personal love story.</p>
+            </div>
+        </section>
+
+        <!-- 5. TRADITIONAL WEAR -->
+        <section class="gal-section gal-dark-bg" id="traditional-wear">
+            <div class="container">
+                <div class="gal-section-header reveal">
+                    <span class="section-subtitle">Collection 04</span>
+                    <h2 class="gal-section-title light">Traditional Wear</h2>
+                </div>
+                <div class="gal-trad-grid reveal">
+                    <!-- 13 -->
+                    <div class="gal-item tall" data-category="traditional" data-src="https://images.unsplash.com/photo-1756483509254-3cc48a5a15b2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-caption="Heritage Wool Sherwani">
+                        <img src="https://images.unsplash.com/photo-1756483509254-3cc48a5a15b2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sherwani" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Heritage Wool Sherwani</span></div>
+                    </div>
+                    <!-- 14 -->
+                    <div class="gal-item wide" data-category="traditional" data-src="https://images.unsplash.com/photo-1695461569773-e7c75f38ac3b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFdlZGRpbmclMjBDb2xsZWN0aW9uJTIwc3RpdGNoaW5nfGVufDB8fDB8fHww" data-caption="Ceremonial Embroidered Kurta">
+                        <img src="https://images.unsplash.com/photo-1695461569773-e7c75f38ac3b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fFdlZGRpbmclMjBDb2xsZWN0aW9uJTIwc3RpdGNoaW5nfGVufDB8fDB8fHww" alt="Embroidered Kurta" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Ceremonial Embroidered Kurta</span></div>
+                    </div>
+                    <!-- 15 -->
+                    <div class="gal-item" data-category="traditional" data-src="https://images.unsplash.com/photo-1727430228383-aa1fb59db8bf?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-caption="Brocade Bandhgala Jacket">
+                        <img src="https://images.unsplash.com/photo-1727430228383-aa1fb59db8bf?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bandhgala" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Brocade Bandhgala Jacket</span></div>
+                    </div>
+                    <!-- 16 -->
+                    <div class="gal-item" data-category="traditional" data-src="https://media.istockphoto.com/id/942185126/photo/detail-of-traditional-indian-winter-sari.webp?a=1&b=1&s=612x612&w=0&k=20&c=DpzcNYyBlCYtG82SEg-l9NBJKlqDx8K5RqZ5JNMXaT4=" data-caption="Hand-Woven Nehru Suit">
+                        <img src="https://media.istockphoto.com/id/942185126/photo/detail-of-traditional-indian-winter-sari.webp?a=1&b=1&s=612x612&w=0&k=20&c=DpzcNYyBlCYtG82SEg-l9NBJKlqDx8K5RqZ5JNMXaT4=" alt="Nehru Suit" loading="lazy">
+                        <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Hand-Woven Nehru Suit</span></div>
+                    </div>
+                </div>
+                <div class="gal-section-desc reveal-up">
+                    <p>Rooted in centuries of sartorial heritage, our Traditional Wear collection honors cultural history with a modern, refined sensibility. From majestic sherwanis and intricate bandhgalas to elegant Nehru jackets, our artisans employ age-old techniques — including Zardozi hand-embroidery and rich brocades — while improving drape, weight, and comfort with contemporary methods. The result is cultural attire that moves beautifully and feels impossibly luxurious.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. WORKSHOP GALLERY -->
+        <section class="gal-section container" id="workshop-gallery">
+            <div class="gal-section-header reveal">
+                <span class="section-subtitle">Behind The Scenes</span>
+                <h2 class="gal-section-title">Workshop Gallery</h2>
+            </div>
+            <div class="gal-workshop-grid reveal">
+                <!-- 17 -->
+                <div class="gal-item wide" data-category="workshop" data-src="https://plus.unsplash.com/premium_photo-1677355760664-30a48984bb57?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXRlbGllciUyMHN0aXRjaGluZ3xlbnwwfHwwfHx8MA%3D%3D" data-caption="The Atelier &mdash; Production Floor">
+                    <img src="https://plus.unsplash.com/premium_photo-1677355760664-30a48984bb57?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXRlbGllciUyMHN0aXRjaGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Atelier" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">The Atelier &mdash; Production Floor</span></div>
+                </div>
+                <!-- 18 -->
+                <div class="gal-item" data-category="workshop" data-src="https://media.istockphoto.com/id/1008450554/photo/close-up-of-hands-stitch-cloths.webp?a=1&b=1&s=612x612&w=0&k=20&c=2087KTBmuXWB0lZWHDQDFyRUp6plg9OHwx7cd-sPfq8=" data-caption="Master Tailor &mdash; Hand Stitching">
+                    <img src="https://media.istockphoto.com/id/1008450554/photo/close-up-of-hands-stitch-cloths.webp?a=1&b=1&s=612x612&w=0&k=20&c=2087KTBmuXWB0lZWHDQDFyRUp6plg9OHwx7cd-sPfq8=" alt="Hand Stitching" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Master Tailor &mdash; Hand Stitching</span></div>
+                </div>
+                <!-- 19 -->
+                <div class="gal-item" data-category="workshop" data-src="https://plus.unsplash.com/premium_photo-1674273913289-8123021e022e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGF0dGVybiUyMGN1dHRpbmd8ZW58MHx8MHx8fDA%3D" data-caption="Pattern Cutting &amp; Drafting">
+                    <img src="https://plus.unsplash.com/premium_photo-1674273913289-8123021e022e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGF0dGVybiUyMGN1dHRpbmd8ZW58MHx8MHx8fDA%3D" alt="Pattern Cutting" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Pattern Cutting &amp; Drafting</span></div>
+                </div>
+                <!-- 20 -->
+                <div class="gal-item" data-category="workshop" data-src="https://plus.unsplash.com/premium_photo-1701069510115-5a72b46a95b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-caption="Fitting Room &mdash; First Basting">
+                    <img src="https://plus.unsplash.com/premium_photo-1701069510115-5a72b46a95b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fitting Room" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Fitting Room &mdash; First Basting</span></div>
+                </div>
+                <!-- 21 -->
+                <div class="gal-item" data-category="workshop" data-src="https://images.unsplash.com/photo-1612261357585-993398d338b4?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-caption="Fabric Library &mdash; Swatches &amp; Samples">
+                    <img src="https://images.unsplash.com/photo-1612261357585-993398d338b4?q=80&w=736&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fabric Library" loading="lazy">
+                    <div class="gal-overlay"><span class="gal-overlay-icon">&#43;</span><span class="gal-overlay-caption">Fabric Library &mdash; Swatches &amp; Samples</span></div>
+                </div>
+            </div>
+            <div class="gal-section-desc reveal-up">
+                <p>The heart of StitchCraft beats within our atelier — a sanctuary where raw materials are transformed into sartorial masterpieces through sheer human skill. Our master tailors, pattern cutters, and seamstresses bring decades of combined experience to every garment, which passes through countless hours of meticulous hand-stitching, pinning, and pressing. It is a slow, deliberate, and deeply passionate process — one that refuses to cut corners.</p>
+            </div>
+        </section>
+
+        <!-- 7. INSTAGRAM-STYLE GALLERY -->
+        <section class="gal-section gal-insta-bg" id="instagram-gallery">
+            <div class="container">
+                <div class="gal-section-header reveal center-align">
+                    <span class="section-subtitle">Follow Our Work</span>
+                    <h2 class="gal-section-title">Latest Creations</h2>
+                    <p class="gal-insta-sub">Captured moments of craftsmanship, artistry, and elegance.</p>
+                </div>
+                <div class="gal-insta-grid reveal">
+                    <!-- 22 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://images.unsplash.com/photo-1520975867597-0af37a22e31e?q=80&w=800" data-caption="Perfect Lapel &mdash; A Tailor's Pride">
+                        <img src="https://images.unsplash.com/photo-1520975867597-0af37a22e31e?q=80&w=800" alt="Lapel Detail" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Perfect Lapel &mdash; A Tailor's Pride</span>
+                        </div>
+                    </div>
+                    <!-- 23 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?q=80&w=800" data-caption="Texture &amp; Weave &mdash; Merino Twill">
+                        <img src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?q=80&w=800" alt="Fabric Texture" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Texture &amp; Weave &mdash; Merino Twill</span>
+                        </div>
+                    </div>
+                    <!-- 24 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://images.unsplash.com/photo-1624137924753-2bf0d5f9c469?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-caption="The Finishing Touch &mdash; Buttonholes">
+                        <img src="https://images.unsplash.com/photo-1624137924753-2bf0d5f9c469?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Buttonholes" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">The Finishing Touch &mdash; Buttonholes</span>
+                        </div>
+                    </div>
+                    <!-- 25 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://media.istockphoto.com/id/1211316229/photo/co-workers-having-a-meeting.jpg?s=612x612&w=0&k=20&c=vwLxnj-W-zZgy8rtk4etjhimFL6rX3iVG3EuljrVc5A=" data-caption="Wedding Season &mdash; In Studio">
+                        <img src="https://media.istockphoto.com/id/1211316229/photo/co-workers-having-a-meeting.jpg?s=612x612&w=0&k=20&c=vwLxnj-W-zZgy8rtk4etjhimFL6rX3iVG3EuljrVc5A=" alt="Wedding" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Wedding Season &mdash; In Studio</span>
+                        </div>
+                    </div>
+                    <!-- 26 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://images.unsplash.com/photo-1585914924626-15adac1e6402?q=80&w=800" data-caption="Grey Flannel &mdash; Classic Excellence">
+                        <img src="https://images.unsplash.com/photo-1585914924626-15adac1e6402?q=80&w=800" alt="Grey Flannel" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Grey Flannel &mdash; Classic Excellence</span>
+                        </div>
+                    </div>
+                    <!-- 27 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800" data-caption="Women's Couture &mdash; Ready for the Evening">
+                        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=800" alt="Couture" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Women's Couture &mdash; Ready for the Evening</span>
+                        </div>
+                    </div>
+                    <!-- 28 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?q=80&w=800" data-caption="Atelier Morning &mdash; The Light Before Work">
+                        <img src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?q=80&w=800" alt="Atelier Morning" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Atelier Morning &mdash; The Light Before Work</span>
+                        </div>
+                    </div>
+                    <!-- 29 -->
+                    <div class="gal-insta-item" data-category="all" data-src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=800" data-caption="Chalk Line &mdash; Precision in Every Mark">
+                        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=800" alt="Chalk Line" loading="lazy">
+                        <div class="gal-insta-overlay">
+                            <span class="insta-icon">&#10010;</span>
+                            <span class="insta-caption">Chalk Line &mdash; Precision in Every Mark</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div id="gal-lightbox" class="gal-lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+        <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+        <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous">&#8249;</button>
+        <button class="lb-nav lb-next" id="lb-next" aria-label="Next">&#8250;</button>
+        <div class="lb-content">
+            <img id="lb-img" src="" alt="StitchCraft Image" loading="lazy">
+            <div class="lb-caption" id="lb-caption"></div>
+            <div class="lb-counter" id="lb-counter"></div>
+        </div>
+        <div class="lb-backdrop" id="lb-backdrop"></div>
+    </div>
+
+    <!-- Footer -->
+                <footer class="footer premium-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="nav-brand">Stitch<span>Craft</span></a>
+                    <p class="footer-desc">Where heritage tailoring meets contemporary design. We craft bespoke garments that transcend generations, built on uncompromising quality and peerless artistry.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" aria-label="Pinterest"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20l4-9"></path><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75-1.554 3.75-4a5 5 0 1 0-9.7 1.7"></path><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0-18 0"></path></svg></a>
+                        <a href="#" aria-label="X"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col links-col">
+                    <h3>Atelier</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Bespoke Tailoring</a></li>
+                        <li><a href="services.html">Bridal Couture</a></li>
+                        <li><a href="services.html">Alteration Services</a></li>
+                        <li><a href="gallery.html">The Gallery</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col links-col">
+                    <h3>Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h3>The StitchCraft Edit</h3>
+                    <p>Subscribe to receive exclusive insights into our latest collections and tailoring masterclasses.</p>
+                    <form class="newsletter-form global-ajax-form">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-subscribe">SUBSCRIBE</button>
+                    </form>
+                    <div class="form-feedback"></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StitchCraft Atelier. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="maintenance.html">Sitemap</a>
+                    <a href="privacy-policy.html">Privacy</a>
+                    <a href="terms-and-conditions.html">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/rtl.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
